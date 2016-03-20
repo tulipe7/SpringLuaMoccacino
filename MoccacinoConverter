@@ -1,3 +1,5 @@
+--API Converter
+
 
 	typeStrings={
 		["boolean"]="boolean",
@@ -19,7 +21,7 @@
 function generatePreample(outTable)
 outTable[#outTable+1]="--==================================================================================================\n"
 
-	outTable[#outTable+1]="--    Copyright (C) <2016>  <Florian Seidl-Schulz>\n"
+	outTable[#outTable+1]="--    Copyright (C) <2016>  <PicassoCT>\n"
 
     outTable[#outTable+1]="--This program is free software: you can redistribute it and/or modify\n"
     outTable[#outTable+1]="--it under the terms of the GNU General Public License as published by\n"
