@@ -1,1267 +1,301 @@
---Part of the Spring Lua API
---This is usefull for Mockups, IDEs and SourceTests. Its not a EngineEmulator.
+--==================================================================================================
+--    Copyright (C) <2016>  <Florian Seidl-Schulz>
+--This program is free software: you can redistribute it and/or modify
+--it under the terms of the GNU General Public License as published by
+--the Free Software Foundation, either version 3 of the License, or
+--(at your option) any later version.
+--This program is distributed in the hope that it will be useful,
+--but WITHOUT ANY WARRANTY; without even the implied warranty of
+--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+--GNU General Public License for more details.
+-- You should have received a copy of the GNU General Public License
+--along with this program.  If not, see <http://www.gnu.org/licenses/>.
+--==================================================================================================
+--Variables for the MockUp
+
+Spring ={}
+numberMock =42
+stringMock =TestString
+tableMock ={exampletable= true}
+booleanMock =true
+functionMock =function (bar) return bar; end
+
+--==================================================================================================
+
+Spring.IsDevLuaEnabled = function  ( )
+return  booleanMock
+ end
+
+Spring.IsEditDefsEnabled = function  ( )
+return  booleanMock
+ end
+
+Spring.AreHelperAIsEnabled = function  ( )
+return  booleanMock
+ end
+
+Spring.FixedAllies = function  ( )
+return  booleanMock
+ end
+
+Spring.IsGameOver = function  ( )
+return  booleanMock
+ end
+
+Spring.GetRulesInfoMap  = function  ( )
+return  stringMock
+ end
+
+Spring.GetGameRulesParam = function  (  ruleIndex)
+assert(type(ruleIndex) == "number","Argument ruleIndex is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetGameRulesParams = function  ( )
+return  numberMock
+ end
+
+Spring.GetTeamRulesParam = function  (  index, teamID,)
+assert(type(index) == "number","Argument index is of invalid type - expected number");
+assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamRulesParams = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitRulesParam = function  (  index, unitID,)
+assert(type(index) == "number","Argument index is of invalid type - expected number");
+assert(type(unitID,) == "number","Argument unitID, is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitRulesParams = function  (  unitID)
+assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetModOptions = function  ( )
+return  stringMock
+ end
+
+Spring.GetMapOptions = function  ( )
+return  stringMock
+ end
+
+Spring.GetModOptions.exampleOption)  = function  ()
+)
+)
+return  numberMock
+ end
+
+Spring.GetGameFrame = function  ( )
+return  numberMock
+ end
+
+Spring.GetGameSeconds = function  ( )
+return  numberMock
+ end
+
+Spring.GetWind = function  ( )
+return  numberMock
+ end
+
+Spring.GetHeadingFromVector = function  (  x,, z)
+assert(type(x,) == "number","Argument x, is of invalid type - expected number");
+assert(type(z) == "number","Argument z is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetVectorFromHeading = function  (  heading)
+assert(type(heading) == "number","Argument heading is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetSideData = function  (  sideName)
+assert(type(sideName) == "string","Argument sideName is of invalid type - expected string");
+return  stringMock
+ end
+
+Spring.GetAllyTeamStartBox = function  (  allyID)
+assert(type(allyID) == "number","Argument allyID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamStartPosition = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetPlayerList = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamList = function  (  allyTeamID)
+assert(type(allyTeamID) == "number","Argument allyTeamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetAllyTeamList = function  ( )
+return  numberMock
+ end
+
+Spring.GetPlayerInfo = function  (  playerID)
+assert(type(playerID) == "number","Argument playerID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetPlayerControlledUnit = function  (  playerID)
+assert(type(playerID) == "number","Argument playerID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetAIInfo = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetAllyTeamInfo = function  (  allyteamID)
+assert(type(allyteamID) == "number","Argument allyteamID is of invalid type - expected number");
+return  tableMock
+ end
+
+Spring.GetTeamInfo = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamResources = function  (  metal", teamID,)
+assert(type(metal") == "string","Argument metal" is of invalid type - expected string");
+assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
+return
+ end
+
+Spring.GetTeamUnitStats = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamResourceStats  = function  (  metal", teamID,)
+assert(type(metal") == "string","Argument metal" is of invalid type - expected string");
+assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
+return
+ end
+
+Spring.GetTeamStatsHistory = function  (  teamID, endIndex, startIndex)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+assert(type(endIndex) == "number","Argument endIndex is of invalid type - expected number");
+assert(type(startIndex) == "number","Argument startIndex is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamLuaAI = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.AreTeamsAllied = function  (  teamID1)
+assert(type(teamID1) == "number","Argument teamID1 is of invalid type - expected number");
+return  booleanMock
+ end
+
+Spring.ArePlayersAllied = function  (  playerID1)
+assert(type(playerID1) == "number","Argument playerID1 is of invalid type - expected number");
+return  booleanMock
+ end
+
+Spring.GetAllUnits = function  ( )
+return  numberMock
+ end
+
+Spring.GetTeamUnits = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamUnitsSorted = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return
+ end
+
+Spring.GetTeamUnitsCounts = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamUnitsByDefs = function  (  teamID,, unitDefID)
+assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
+assert(type(unitDefID) == "number","Argument unitDefID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamUnitDefCount = function  (  teamID,, unitDefID)
+assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
+assert(type(unitDefID) == "number","Argument unitDefID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetTeamUnitCount = function  (  teamID)
+assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitsInRectangle = function  (  xmin,, teamID], zmin,, zmax, xmax,)
+assert(type(xmin,) == "number","Argument xmin, is of invalid type - expected number");
+assert(type(teamID]) == "number","Argument teamID] is of invalid type - expected number");
+assert(type(zmin,) == "number","Argument zmin, is of invalid type - expected number");
+assert(type(zmax) == "number","Argument zmax is of invalid type - expected number");
+assert(type(xmax,) == "number","Argument xmax, is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitsInBox = function  ( )
+return  numberMock
+ end
+
+Spring.GetUnitsInSphere = function  (  radius, y,, z,, teamID], x,)
+assert(type(radius) == "number","Argument radius is of invalid type - expected number");
+assert(type(y,) == "number","Argument y, is of invalid type - expected number");
+assert(type(z,) == "number","Argument z, is of invalid type - expected number");
+assert(type(teamID]) == "number","Argument teamID] is of invalid type - expected number");
+assert(type(x,) == "number","Argument x, is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitsInCylinder = function  (  radius, z,, teamID], x,)
+assert(type(radius) == "number","Argument radius is of invalid type - expected number");
+assert(type(z,) == "number","Argument z, is of invalid type - expected number");
+assert(type(teamID]) == "number","Argument teamID] is of invalid type - expected number");
+assert(type(x,) == "number","Argument x, is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitsInPlanes = function  ( )
+return  numberMock
+ end
+
+Spring.GetUnitNearestAlly = function  (  range, unitID)
+assert(type(range) == "number","Argument range is of invalid type - expected number");
+assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitNearestEnemy = function  (  range, unitID)
+assert(type(range) == "number","Argument range is of invalid type - expected number");
+assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.ValidUnitID = function  (  unitID)
+assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
+return  numberMock
+ end
+
+Spring.GetUnitIsDead = function  (  unitID)
+assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
+return  booleanMock
+ end
 
-Spring={}
-GaiaTeamID = 42
-
-Spring.GetGaiaTeamID = function GetGaiaTeamID () return GaiaTeamID end
-
-Spring.IsGodModeEnabled = function IsGodModeEnabled () return false end
-
-
---TODO
-
-
-Spring.GetGaiaTeamID
-
- ( ) -> number teamID
-
-GameStates
-
-Spring.IsGodModeEnabled
-
- ( ) -> boolean
-
-Spring.IsCheatingEnabled
-
- ( ) -> boolean
-
-Spring.IsDevLuaEnabled
-
- ( ) -> boolean
-
-Spring.IsEditDefsEnabled
-
- ( ) -> boolean
-
-Spring.AreHelperAIsEnabled
-
- ( ) -> boolean
-
-Spring.FixedAllies
-
- ( ) -> nil | boolean
-
-Spring.IsGameOver
-
- ( ) -> boolean
-
-RulesParams
-
-Those functions allow to save data per Game,Team and Unit.
-The advantage of it is that it can be read from anywhere (even from LuaUI and AIs!)
-string values are new since 95.0
-
-Spring.GetRulesInfoMap REMOVED in 0.82!
-
- ( ) -> { [key1] = string value1, [key2] = string value2, ... }
- ( string "key" ) -> string
-
-Spring.GetGameRulesParam
-
- ( number ruleIndex | string ruleName ) -> nil | number value | string value
-
-Spring.GetGameRulesParams
-
- ( ) -> nil | { [ruleIndex1] = {[ruleName1] = number | string value1}, ... }
-
-Spring.GetTeamRulesParam
-
- ( number teamID, number index | string ruleName ) -> nil | number value | string value
-
-Spring.GetTeamRulesParams
-
- ( number teamID ) -> nil | { [ruleIndex1] = {[ruleName1] = number | string value1}, ... }
-
-
-Spring.GetUnitRulesParam
-
- ( number unitID, number index | string ruleName ) -> nil | number value | string value
-
-Spring.GetUnitRulesParams
-
- ( number unitID ) -> nil | { [ruleIndex1] = {[ruleName1] = number | string value1}, ... }
-
-Mod-/Map-Options
-
-Spring.GetModOptions
-
- ( ) -> {} | { "keyName1" = string "value", "keyName2" = string "value", ... }
-
-Spring.GetMapOptions
-
- ( ) -> {} | { "keyName1" = string "value", "keyName2" = string "value", ... }
-
-
-! bool values are not transfered from C to Lua correctly, so in IF theres needed to use this condition:
-
-"if (tonumber(Spring.GetModOptions.exampleOption) == 1) then...end"
-not only:
-"if (Spring.GetModOptions.exampleOption) then...end"
-Speed/Time
-
-Spring.GetGameSpeed As of 98.0 moved to Lua_UnsyncedRead due to desyncs in replays/demos
-
- ( ) -> number userSpeedFactor, number speedFactor, boolean paused
-
-Spring.GetGameFrame
-
- ( ) -> number frameNum%dayFrames, number frameNum/dayFrames
-
-Spring.GetGameSeconds
-
- ( ) -> number seconds
-
-Vectors
-
-Spring.GetWind
-
- ( ) -> number dirX, number dirY, number dirZ, 
-        number strength,  number normDirX, number normDirY, number normDirZ
-
-Spring.GetHeadingFromVector
-
- ( number x, number z ) -> number heading
-
-Spring.GetVectorFromHeading
-
- ( number heading ) -> number x, number z
-
-Sides/Factions
-
-Spring.GetSideData
-
- ( string sideName ) -> nil | string startUnit, string caseSensitiveSideName
- ( number sideID ) -> nil | string sideName, string startUnit, string caseSensitiveSideName
- ( ) -> { [1] = { sideName=string,caseName=string,startUnit=string}, [2] = .., .. }
-
-Teams
-StartBoxes/StartPositions
-
-Spring.GetAllyTeamStartBox
-
- ( number allyID ) -> nil | number xmin, number zmin, number xmax, number zmax
-
-Spring.GetTeamStartPosition
-
- ( number teamID ) -> nil | number x, number y, number z
-
-Player,Team,Ally Lists/Info
-
-Spring.GetPlayerList
-
- ( [number teamID = -1 | boolean onlyActive = false] [, number teamID | boolean onlyActive])
- -> nil | { [1] = number playerID, etc... }
-
-Spring.GetTeamList
-
- ( [number allyTeamID = -1] ) -> nil | { [1] = number teamID, etc... }
-
-Spring.GetAllyTeamList
-
- ( ) -> { [1] = number allyTeamID, etc... }
-
-Spring.GetPlayerInfo
-
- ( number playerID ) -> 
-   nil | string  "name",  (PRE-83.0: in synced code this is "SYNCED_NONAME"!)
-         boolean active,
-         boolean spectator,
-         number  teamID,
-         number  allyTeamID,
-         number  pingTime,
-         number  cpuUsage,
-         string  country,
-         number  rank
-         table   customPlayerKeys
-
-Spring.GetPlayerControlledUnit
-
- ( number playerID ) -> nil | number unitID
-
-Spring.GetAIInfo
-
- ( number teamID ) -> 
-         number  skirmishAIID,
-         string  name,
-         number  hostingPlayerID,
-         string  shortName, (synced => "SYNCED_NOSHORTNAME"; non-local => "UNKNOWN")
-         string  version,   (synced => "SYNCED_NOVERSION";   non-local => "UNKNOWN")
-         table   options    (synced & non-local => empty-table)
-
-Note: Before 0.82, the first argument was teamID, and then every other argument with a shifted position.
-
-
-Spring.GetAllyTeamInfo
-
- ( number allyteamID ) -> nil | table   customTeamKeys
-
-Spring.GetTeamInfo
-
- ( number teamID ) ->
-   nil | number  teamID,
-         number  leader, (:= a player id)
-         boolean isDead,
-         boolean isAiTeam,
-         string  "side",
-         number  allyTeam,
-         table   customTeamKeys,
-         number  incomeMultiplier
-
-Spring.GetTeamResources
-
- ( number teamID, string "metal" | "energy" ) ->
-   nil | number currentLevel,
-         number storage,
-         number pull,
-         number income,
-         number expense,
-         number share,
-         number sent,
-         number received
-
-Spring.GetTeamUnitStats
-
- ( number teamID ) ->
-   nil | number killed,
-         number died,
-         number capturedBy,
-         number capturedFrom,
-         number received,
-         number sent
-
-Spring.GetTeamResourceStats 0.82 and later
-
- ( number teamID,  string "metal" | "energy" ) ->
-   nil | number used,
-         number produced,
-         number excessed,
-         number received,
-         number sent
-
-Spring.GetTeamStatsHistory
-
- ( number teamID [, number startIndex [, number endIndex = startIndex ]]) ->
-   nil |
-   number cur_max_index |
-   {
-     [1] = {
-       "time"             = number,
-       "frame"            = number,
-       "metalUsed"        = number,
-       "metalProduced"    = number,
-       "metalExcess"      = number,
-       "metalReceived"    = number,
-       "metalSent"        = number,
-       "energyUsed"       = number,
-       "energyProduced"   = number,
-       "energyExcess"     = number,
-       "energyReceived"   = number,
-       "energySent"       = number,
-       "damageDealt"      = number,
-       "damageReceived"   = number,
-       "unitsProduced"    = number,
-       "unitsDied"        = number,
-       "unitsReceived"    = number,
-       "unitsSent"        = number,
-       "unitsCaptured"    = number,
-       "unitsOutCaptured" = number,
-       "unitsKilled"      = number
-     }, ...
-  }
-
-if called with just teamID as argument it returns the current possible range for startIndex/endIndex :={1..cur_max_index}
-
-
-Spring.GetTeamLuaAI
-
- ( number teamID ) -> string "luaAI"
-
-Returns string containing name of AI defined in file LuaAI.lua as name="<AI name>". Maybe it returns whole table with all values there, so maybe depends, but in my LuaAI.lua name is on first position...
-Teams/PlayersAllied
-
-Spring.AreTeamsAllied
-
- ( number teamID1, number teamID2 ) -> nil | boolean
-
-Spring.ArePlayersAllied
-
- ( number playerID1, number playerID2 ) -> nil | boolean
-
-Units
-GetUnits
-
-Spring.GetAllUnits
-
- ( ) -> nil | unitTable = { [1] = number unitID, ... }
-
-Spring.GetTeamUnits
-
- ( number teamID ) -> nil | unitTable = { [1] = number unitID, etc... }
-
-Spring.GetTeamUnitsSorted
-
- ( number teamID ) -> nil |
-   unitDefTable = {
-     [number unitDefID] = { [1] = [number unitID], etc... },
-     etc...
-   }
-
-Spring.GetTeamUnitsCounts
-
- ( number teamID ) -> nil | countTable = { [number unitDefID] = count, etc... }
-
-Spring.GetTeamUnitsByDefs
-
- ( number teamID, number unitDefID | { number unitDefID1, ... } )
-   -> nil | unitTable = { [1] = number unitID, etc... }
-
-Spring.GetTeamUnitDefCount
-
- ( number teamID, number unitDefID ) -> nil | number count
-
-Spring.GetTeamUnitCount
-
- ( number teamID ) -> nil | number count
-
-Spring.GetUnitsInRectangle
-
- ( number xmin, number zmin, number xmax, number zmax [,number teamID] ) 
-   -> nil | unitTable = { [1] = number unitID, etc... }
-
-Spring.GetUnitsInBox
-
- ( number xmin, number ymin, number zmin,
-   number xmax, number ymax, number zmax [,number teamID] )
-   -> nil | unitTable = { [1] = number unitID, etc... }
-
-Spring.GetUnitsInSphere
-
- ( number x, number y, number z, number radius [,number teamID] )
-   -> nil | unitTable = { [1] = number unitID, etc... }
-
-Spring.GetUnitsInCylinder
-
- ( number x, number z, number radius [,number teamID] )
-   -> nil | unitTable = { [1] = number unitID, etc... }
-
-Spring.GetUnitsInPlanes
-
- ( planes = { [1] = { number nx, number ny, number nz, number d }, etc... } )
-   -> nil | unitTable = { [1] = number unitID, etc... }
-
- plane normals point towards accepted space,
- so the acceptance criteria for each plane is:
-   radius     = unit radius
-   px, py, pz = unit position
-   [(nx * px) + (ny * py) + (nz * pz) + (d - radius)]  <=  0
-
-Spring.GetUnitNearestAlly
-
- ( number unitID [, number range ] ) -> nil | number unitID
-
-Spring.GetUnitNearestEnemy
-
- ( number unitID [, number range [, bool useLOS]] ) -> nil | number unitID
-
-Post 95.0 this no longer returns neutral units
-Unit Informations
-
-Spring.ValidUnitID
-
- ( number unitID ) -> boolean
-
-Spring.GetUnitIsDead
-
- ( number unitID ) -> nil | boolean
-
-Returns false if unit exists and is alive, true for a brief period of time after unit dies, nil otherwise
-keep this in mind when using (not Spring.GetUnitIsDead())
-
-Spring.GetUnitTooltip
-
- ( number unitID ) -> nil | string tooltip
-
-Spring.GetUnitDefID
-
- ( number unitID ) -> nil | number unitDefID
-
-Spring.GetUnitTeam
-
- ( number unitID ) -> nil | number teamID
-
-Spring.GetUnitAllyTeam
-
- ( number unitID ) -> nil | number allyID
-
-Spring.GetUnitLineage Removed from version 0.83.x
-
- ( number unitID ) -> nil | number lineage | number lineage, boolean lineageIsRoot
-
-Spring.GetUnitNeutral
-
- ( number unitID ) -> nil | boolean neutral
-
-Spring.GetUnitHealth
-
- ( number unitID ) -> nil | number health, number maxHealth, number paralyzeDamage,
-                            number captureProgress, number buildProgress
-
-build Progress is returned as floating Point between 0.0 and 1.0
-
-Spring.GetUnitArmored armorMultiple new in version 0.83.x
-
- ( number unitID ) -> nil | boolean armored, number armorMultiple
-
-Spring.GetUnitIsStunned
-
- ( number unitID ) -> nil | boolean stunned_or_inbuild, boolean stunned, boolean inbuild
-
-Spring.GetUnitMaxRange
-
- ( number unitID ) -> nil | number maxEngagementRange
-
-Spring.GetUnitResources
-
- ( number unitID ) -> nil | number metalMake, number metalUse,
-                            number energyMake, number energyUse
-
-Spring.GetUnitHarvestStorage
-
- ( number unitID ) -> nil | number metal
-
-See also harvestStorage UnitDef tag.
-
-Spring.GetUnitMetalExtraction 0.82+ and later
-
- ( number unitID ) -> nil | number
-
-Spring.GetUnitExperience
-
- ( number unitID ) -> nil | number experience
-
-Spring.GetUnitStates
-
- ( number unitID ) -> nil | {
-   "firestate" = number,
-   "movestate" = number,
-   "repeat" = boolean,
-   "cloak" = boolean,
-   "active" = boolean,
-   "trajectory" = boolean,
-   ["autoland" = boolean,]
-   ["autorepairlevel" = number,]
-   ["loopbackattack" = boolean]
- } 
-
-Spring.GetUnitIsActive
-
- ( number unitID ) -> nil | boolean
-
-Spring.GetUnitIsCloaked
-
- ( number unitID ) -> nil | boolean
-
-Spring.GetUnitSelfDTime
-
- ( number unitID ) -> nil | number
-
-Spring.GetUnitStockpile
-
- ( number unitID ) -> nil | number numStockpiled, number numStockpileQued,
-                            number buildPercent
-
-Spring.GetUnitHeight
-
- ( number unitID ) -> nil | number
-
-Spring.GetUnitRadius
-
- ( number unitID ) -> nil | number
-
-Spring.GetUnitBlocking New in version 85.0
-
- ( number unitID ) -> nil | boolean blocking, boolean crushable
-
-New in version 95.0 Now return values are:
-
- boolean isBlocking,
- boolean isSolidObjectCollidable,
- boolean isProjectileCollidable,
- boolean isRaySegmentCollidable,
- boolean crushable,
- boolean blockEnemyPushing,
- boolean blockHeightChanges
-
-Spring.GetUnitPosition
-
- ( number unitID, [, boolean midPos [, boolean aimPos ] ] ) ->
-   nil |
-   number bpx, number bpy, number bpz
-   [, number mpx, number mpy, number mpz ]
-   [, number apx, number apy, number apz ]
-
-since 89.0, returns the base (default), middle or aim position of the unit.
-
-Spring.GetUnitBasePosition Deprecated in 89.0, use GetUnitPosition
-
- ( number unitID ) -> nil | number x, number y, number z
-
-returns the bottom of the unit.
-
-Spring.GetUnitDirection
-
- ( number unitID ) -> nil | number dx, number dy, number dz
-
-returns the direction vector
-
-Spring.GetUnitHeading
-
- ( number unitID ) -> nil | number heading
-
-returns heading directions used in COB scripts
-
-Spring.GetUnitRotation New in version 95.0
-
-  (number unitID) --> nil | number pitch, number yaw, number roll 
-
-Marked as (WIP) in changelog
-
-
-Spring.GetUnitVelocity velw new in 95.0
-
- ( number unitID ) -> nil | number velx, number vely, number velz, number velLength
-
-Spring.GetUnitBuildFacing
-
- ( number unitID ) -> nil | number
-
-Spring.GetUnitIsBuilding returns what unit a constructor/factory is currently building
-
- ( number unitID ) -> nil | number unitID
-
-Spring.GetUnitCurrentBuildPower New in version 92.0
-
- ( number unitID ) -> nil | number buildPower
-
-Spring.GetUnitNanoPieces
-
- ( number unitID ) -> nil | { [1] = number piece1, etc ... }
-
-Spring.GetUnitTransporter
-
- ( number unitID ) -> nil | number unitID
-
-Spring.GetUnitIsTransporting
-
- ( number unitID ) -> nil | { [1] = number unitID, etc... }
-
-Spring.GetUnitShieldState
-
- ( number unitID [, number weaponID = -1] ) -> nil | number isEnabled, number curPower
-
-Spring.GetUnitTravel
-
- ( number unitID ) -> nil | number travel, number travelPeriod
-
-Spring.GetUnitFuel
-
- ( number unitID ) -> nil | number
-
-Spring.GetUnitFlanking
-
- ( number unitID, string "dir" ) -> nil | number x, number y, number z
- ( number unitID, string "mode" | "moveFactor" | "minDamage" | "maxDamage" ) -> nil | number
- ( number unitID ) -> nil | number mode, number modilityAdd,
-   number minDamage, number maxDamage, number dirX, number dirY, number dirZ
-
-Spring.GetUnitSensorRadius
-
- ( number unitID, string type ) -> nil | number radius
-
-possible types are:
-los, airLos, radar, sonar, seismic, radarJammer & sonarJammer
-
-Spring.GetUnitLosState raw is only available in gadgets
-
- ( number unitID [, number allyTeamID [, boolean raw] ] ) -> nil | number raw |
- { ["los" = true] [, "radar" = true] [, "typed" = true] }
-
-Spring.GetUnitSeparation surfaceDist new in 95.0
-
- ( number unitID1, number unitID2 [, boolean 2D] [, boolean surfaceDist] ) -> nil | number distance
-
-returns the distance of 2 units, surfaceDist calculates the distance between the unitsphere surfaces instead of their midpos
-
-Spring.GetUnitDefDimensions
-
- ( number unitDefID ) -> nil |
-   {
-     "height" = number,
-     "radius" = number,
-     "midx"   = number,
-     "minx"   = number,
-     "maxx"   = number,
-     "midy"   = number,
-     "miny"   = number,
-     "maxy"   = number,
-     "midz"   = number,
-     "minz"   = number,
-     "maxz"   = number
-   }
-
-Spring.GetUnitLastAttacker
-
- ( number unitID ) -> nil | number unitID
-
-Spring.GetUnitLastAttackedPiece'
-
- ( number unitID ) -> nil | string pieceName, number gameframe
-
-Spring.GetUnitMoveTypeData new in version 0.80+
-
- ( number unitID ) -> nil | { movetype data }
-
-Spring.GetUnitCollisionVolumeData
-
- ( number unitID )
- -> number scaleX, number scaleY, number scaleZ,
- number offsetX, number offsetY, number offsetZ,
- number volumeType, number testType, number primaryAxis, boolean disabled
-
-Spring.GetUnitPieceCollisionVolumeData
-
- ( number unitID, number pieceID )
- -> number scaleX, number scaleY, number scaleZ,
- number offsetX, number offsetY, number offsetZ,
- number volumeType, number testType, number primaryAxis, boolean disabled
-
-
-Unit Weapon Informations
-
-Spring.GetUnitWeaponState
-
- ( number unitID, number weaponNum ) -> nil |
-   boolean angleGood, boolean loaded, number reloadFrame, number salvoLeft, number numStockpiled
- ( number unitID, number weaponNum, string tag ) -> nil | number
- `tag` can be:
- "reloadState" == "reloadFrame"
- "reloadTime"
- "accuracy"
- "sprayAngle"
- "range"
- "projectileSpeed"
- "burst"
- "burstRate"
- "projectiles"
-
-Spring.GetUnitWeaponDamages New in version 101.0
-
- ( number unitID, number weaponNum | "selfDestruct" | "explode", string tag ) -> nil | number
- `tag` can be:
- "paralyzeDamageTime"
- "impulseFactor"
- "impulseBoost"
- "craterMult"
- "craterBoost"
- "dynDamageExp"
- "dynDamageMin"
- "dynDamageRange"
- "dynDamageInverted"
- "craterAreaOfEffect"
- "damageAreaOfEffect"
- "edgeEffectiveness"
- "explosionSpeed"
- - or -
- an armor type index to get the damage against it.
-
-Spring.GetUnitWeaponVectors
-
- ( number unitID, number weaponNum ) -> nil | number posX, number posY, number posZ,
-   number dirX, number dirY, number dirZ
-
-Spring.GetUnitWeaponTryTarget New in version 94.0
-
- ( number unitID, number weaponNum, 
-   number targetID | number posX, number posY, number posZ ) -> nil | boolean success
-
-Spring.GetUnitWeaponTestTarget New in version 94.0
-
- ( number unitID, number weaponNum, 
-   number targetID | number posX, number posY, number posZ ) -> nil | boolean success
-
-Spring.GetUnitWeaponTestRange New in version 94.0
-
- ( number unitID, number weaponNum, 
-   number targetID | number posX, number posY, number posZ ) -> nil | boolean success
-
-Spring.GetUnitWeaponHaveFreeLineOfFire New in version 94.0
-
- ( number unitID, number weaponNum, 
-   number targetID | number posX, number posY, number posZ ) -> nil | boolean success
-
-Spring.GetUnitWeaponCanFire New in version 95.0
-
- ( number unitID, number weaponNum ) -> nil | boolean canFire
-
-Spring.GetUnitWeaponTarget New in version 95.0
-
- ( number unitID, number weaponNum ) -> nil |
- number 0 | number 1, bool isUserTarget, number unitID | 
- number 2, bool isUserTarget, { number posX, number posY, number posZ } | 
- number 3, bool isUserTarget, number ProjectileID
-
-Spring.GetRadarErrorParams New in version 95.0
-
- (number allyTeamID) --> nil | 
- number allyteamErrorSize, number baseErrorSize, number baseErrorMult
-
-Spring.GetUnitPosErrorParams New in version 95.0
-
- (number unitID) --> nil |
-      number posErrorVector.x, number posErrorVector.y, number posErrorVector.z,
-      number posErrorDelta.x, number posErrorDelta.y, number posErrorDelta.z,
-      number nextPosErrorUpdate
-
-Unit Pieces
-
-Spring.GetUnitVectors
-
- ( number unitID ) -> nil | {frontX,frontY,frontZ}, {upX,upY,upZ}, {rightX,rightY,rightZ}
-
-Spring.GetUnitPiecePosition
-
- ( number unitID, number piece ) -> number posx, number posy, number posz
-
-Returns piece position in unit space. Also remember to multiply the x-axis value with -1 if you want move a piece to another piece.
-
-Spring.GetUnitPieceDirection
-
- ( number unitID, number piece ) -> number dirx, number diry, number dirz
-
-Consider this broken. It returns reverse direction in piece space (i.e. vertex(0)-vertex(1)) for pieces with >= 2 vertices and (1,1,1) for pieces with < 2 vertices)
-
-Spring.GetUnitPieceMatrix
-
- ( number unitID, number piece ) -> { [1] = number, ... , [16] = number }
-
-Spring.GetUnitPieceList
-
- ( number unitID ) -> { [1] = string "piecename", ... , [pieceNumN] = string "piecename" }
-
-Spring.GetUnitPieceMap
-
- ( number unitID ) -> { "piecename1" = pieceNum1, ... , "piecenameN" = pieceNumN }
-
-Spring.GetUnitPieceInfo
-
- ( number unitID, number piece ) -> {
-   "name"     = string "piecename",
-   "isEmpty"  = boolean,
-   "children" = { [1] = string "piecename", ... },
-   "min"      = { [1] = number x, [2] = number y, [3] = number z },
-   "max"      = { [1] = number x, [2] = number y, [3] = number z },
-   "offset"   = { [1] = number x, [2] = number y, [3] = number z }, 
-   "parent" = string "parentpiecename",   
- }
-
-"parent" field New in version 95.0
-
-Spring.GetUnitScriptPiece
-
- ( number unitID [, number scriptPiece ] )
-  -> nil | { scriptPieceNum = number modelPieceNum } | number modelPieceNum
-
-This functions translate the COB ScriptPiece numbers into the ModelPiece numbers (the set of ScriptPieces is a subset of the ModelPieces, means #ScriptPieces <= #ModelPieces), which is used in all other functions (the "number piece" means always the modelpiece). So if you get via Cob2Lua a pieceID you have to translate it with this function. Btw the COB ScriptPiece number is equal with the piece position in the piece definition in your cob/bos.
-
-Spring.GetUnitScriptNames
-
- ( number unitID )
-  -> { "cobpiecename1" = ScriptPieceNum1, ... , "cobpiecenameN" = ScriptPieceNumN }
-
-Spring.GetUnitPiecePosDir
-
- ( number unitID, number pieceNum ) -> nil | number posX, number posY, number posZ,
-   number dirX, number dirZ, number dirY
-
-Returns piece position and direction in world space. The direction (dirX, dirY, dirZ) is not necessarily normalized. The position is defined as the position of the first vertex of the piece and it defines direction as the direction in which the line from the first vertex to the second vertex points.
-CommandQueues
-
-Spring.GetUnitCommands
-Spring.GetCommandQueue (Alias)
-
- ( number unitID, number count = 0 ) -> nil | number commandQueueSize New in version 96
- ( number unitID [, number count = -1] ) 
- -> nil | table commandQueueTable = {
-    [1] = {
-      "id"      = number,
-      "params"  = { [1] = number, ...},
-      "options" = {
-        "coded"    = number,
-        "alt"      = boolean,
-        "ctrl"     = boolean,
-        "shift"    = boolean,
-        "right"    = boolean,
-        "internal" = boolean,
-        "meta"    = boolean
-      }
-    }, ...
-  }
-
-This function can trigger an error if called too often without passing a second parameter. Refer to LuaSyncedRead.cpp#L3983-L3996
-
-Spring.GetFullBuildQueue
-
- ( number unitID ) ->
- nil | buildOrders = {
-         [1] = { [number unitDefID] = number count },  etc...
-       }
-
-Spring.GetRealBuildQueue (cleans the buildqueue of things the unit can't build itself)
-
- ( number unitID ) ->
- nil | buildOrders = {
-         [1] = { [number unitDefID] = number count },  etc...
-       }
-
-Spring.GetFactoryCommands
-
- ( number unitID, number count = 0 ) -> nil | number commandQueueSize New in version 96
- ( number unitID [, number count = -1 ] ) 
- -> nil | table commandQueueTable = {
-    [1] = {
-      "id"      = number,
-      "params"  = { [1] = number, ...},
-      "options" = {
-        "coded"    = number,
-        "alt"      = boolean,
-        "ctrl"     = boolean,
-        "shift"    = boolean,
-        "right"    = boolean,
-        "internal" = boolean,
-        "meta"    = boolean
-      }
-    }, ...
-  }
-
-Spring.GetFactoryCounts (used to get the buildqueue of a factory, seems screwed o_O)
-
- ( number unitID [, number count [, boolean addCMDs ] ] ) -> nil | commandQueueTable = {
-    [2] = { [number unitDefID | number -cmdID] = number count }, ...
-  }
-
-Command Descriptions/Buttons
-
-Spring.GetUnitCmdDescs
-
- ( number unitID [, number startIndex [, number endIndex ] ] ) -> nil | {
-     [1] = {
-       "id"          = number,
-       "type"        = number,
-       "name"        = string,
-       "action"      = string,
-       "tooltip"     = string,
-       "texture"     = string,
-       "cursor"      = string,
-       "hidden"      = boolean,
-       "disabled"    = boolean,
-       "showUnique"  = boolean,
-       "onlyTexture" = boolean,
-
-       "params"      = { [1] = string, ... }
-    }, ...
-  }
-
-Spring.FindUnitCmdDesc
-
- ( number unitID, number cmdID ) -> nil | number index
-
-Features
-GetFeatures
-
-Spring.GetFeaturesInRectangle
-
- ( number xmin, number zmin, number xmax, number zmax )
-   -> featureTable = { [1] = number featureID, etc... }
-
-Spring.GetFeaturesInSphere
-
- ( number x, number y, number z, number radius )
-   -> featureTable = { [1] = number featureID, etc... }
-
-Spring.GetFeaturesInCylinder
-
- ( number x, number z, number radius )
-   -> featureTable = { [1] = number featureID, etc... }
-
-Spring.GetAllFeatures
-
- ( ) -> { [1] = number featureID, ... }
-
-Feature Informations
-
-Spring.ValidFeatureID
-
- ( number featureID ) -> boolean
-
-Spring.GetFeatureDefID
-
- ( number featureID ) -> nil | number featureDefID
-
-Spring.GetFeatureTeam
-
- ( number featureID ) -> nil | number teamID
-
-Spring.GetFeatureAllyTeam
-
- ( number featureID ) -> nil | number allyID
-
-Spring.GetFeatureHealth
-
- ( number featureID ) -> nil | number health, number maxHealth, number resurrectProgress
-
-Spring.GetFeatureHeight
-
- ( number featureID ) -> nil | number
-
-Spring.GetFeatureRadius
-
- ( number featureID ) -> nil | number
-
-Spring.GetFeaturePosition
-
- ( number featureID, [, boolean midPos [, boolean aimPos ] ] ) ->
- nil |
- number bpx, number bpy, number bpz [,
- number mpx, number mpy, number mpz [,
- number apx, number apy, number apz ]]
-
-since 89.0, returns the base (default), middle or aim position of the feature.
-
-Spring.GetFeatureVelocity New in version 95.0
-
- ( number featureID [, boolean norm] )
- -> nil | number velx, number vely, number velz, number velLength
-
-Spring.GetFeatureDirection
-
- ( number featureID ) -> nil | number dirx, number diry, number dirz
-
-Spring.GetFeatureHeading
-
- ( number featureID ) -> nil | number heading
-
-Spring.GetFeatureResources
-
- ( number featureID ) -> nil | number RemainingMetal, number maxMetal,
-                               number RemainingEnergy, number maxEnergy, number reclaimLeft
-
-Spring.GetFeatureNoSelect
-
- ( number featureID ) -> nil | boolean noSelect
-
-Spring.GetFeatureResurrect
-
- ( number featureID ) -> nil | string UnitDefName, number buildFacing
-
-Spring.GetFeatureCollisionVolumeData
-
- ( number featureID )
- -> number scaleX, number scaleY, number scaleZ,
- number offsetX, number offsetY, number offsetZ,
- number volumeType, number testType, number primaryAxis, boolean disabled
-
-Spring.GetFeatureBlocking
-
- (number featureID) --> boolean collidable, boolean crushable, boolean blocking
-
-New in version 95.0 Now return values are:
-
- boolean isBlocking,
- boolean isSolidObjectCollidable,
- boolean isProjectileCollidable,
- boolean isRaySegmentCollidable,
- boolean crushable,
- boolean blockEnemyPushing,
- boolean blockHeightChanges
-
-COB
-
-Spring.GetCOBUnitVar
-
- ( number unitID, integer varID [, boolean unpack = false ] )
-  -> nil | number value | number unpackedX, number unpackedY
-
-Spring.GetCOBTeamVar
-
- ( number teamID, integer varID [, boolean unpack = false ] )
-  -> nil | number value | number unpackedX, number unpackedY
-
-Spring.GetCOBAllyTeamVar
-
- ( number allyID, integer varID [, boolean unpack = false ] )
-  -> nil | number value | number unpackedX, number unpackedY
-
-Spring.GetCOBGlobalVar
-
- ( integer varID [, boolean unpack = false ] )
-  -> nil | number value | number unpackedX, number unpackedY
-
-Ground
-Ground Informations
-
-Elevation is y. Water level is always at y=0. Ground height can be changed during play (terraform or deformation).
-
-Spring.GetGroundHeight
-
- ( number x, number z ) -> number y
-
-Spring.GetGroundOrigHeight
-
- ( number x, number z ) -> number y
-
-Spring.GetGroundNormal
-
- ( number x, number z [, smoothedNormal] ) -> number x, number y, number z, number slope 
-
-New in version 100.0: smoothedNormal and slope
-
-Spring.GetGroundInfo
-
- ( number x, number z ) -> string "Type", number metal, number hardness,
-                           number tankSpeed, number kbotSpeed, number hoverSpeed,
-                           number shipSpeed, boolean receiveTracks
-
-Spring.GetGroundBlocked
-
- ( number x, number z |
-   number x1, number z1, number x2, number z2 )
-   -> nil |  string "feature", number featureID  |  string "unit", number unitID
-
-Spring.GetGroundExtremes
-
- ( ) -> nil | number minHeight, number maxHeight
-
-Spring.GetSmoothMeshHeight
-
- ( number x, number z ) -> number y
-
-Spring.GetMetalMapSize
-
- ( ) -> number sizeX, number sizeY
-
-Spring.GetMetalAmount
-
- ( number x, number z ) -> number metalAmount 
-
-where x & z are in metal map coordinates (worldspace/16)
-
-Spring.GetMetalExtraction
-
- ( number x, number z ) -> number extractionAmount 
-
-where x & z are in metal map coordinates (worldspace/16)
-
-Spring.GetTerrainTypeData New in version 92.0
-
- ( number i )
-   -> nil |  string "name", number hardness,
-             number tankSpeed, number kbotSpeed, number hoverSpeed, number shipSpeed,
-             boolean receiveTracks
-
-Test Orders
-
-Spring.TestMoveOrder
-
- ( number unitDefID, number x, number y, number z) -> boolean validMove
-
-New in version 95.0 parameters now are:
-
-   number unitDefID,
-   number pos.x, number pos.y, number pos.z
-   [, number dir.x
-   [, number dir.y
-   [, number dir.z
-   [, boolean testTerrain
-   [, boolean testObjects
-   [, boolean centerOnly ]]]]]]
-   ) --> boolean 
-
-
-
-Spring.TestBuildOrder
-
- ( number unitDefID, number x, number y, number z, number facing)
-   -> number blocking [,number featureID]
-
- blocking can be:
-   0 - blocked
-   1 - mobile unit in the way
-   2 - free  (or if featureID is != nil then with a blocking feature that can be reclaimed)
- facing can be:
-   0, "s", "south"
-   1, "e", "east"
-   2, "n", "north"
-   3, "w", "west"
-
-Spring.Pos2BuildPos optional param facing supported in 0.83 and later
-
- ( number unitDefID, number x, number y, number z[, number facing] ) 
-   -> nil | number x, number y, number z
-
-PathFinding
-
-Spring.GetUnitEstimatedPath
-
- ( number unitID ) -> nil | {
-    [1] = { x,y,z }, ...
-  },{
-    [1] = startIdxOfDetailedPath,
-    [2] = startIdxOfDetailedEstimatedPath1,
-    [3] = startIdxOfDetailedEstimatedPath2,
-  }
- GetUnitEstimatedPath() returns 2 tables:
-   1 table the waypoints and 1 table with indices (in the waypoint table)
-   when a new (more lazy) pathfinding algorithm  begins.
-   So the waypoint table contains 3 different levels of details.
-
-LOS
-
-Spring.IsPosInLos
-
- ( number x, number y, number z, number allyID ) -> boolean
-
-Spring.IsPosInRadar
-
- ( number x, number y, number z, number allyID ) -> boolean
-
-Spring.IsPosInAirLos
-
- ( number x, number y, number z, number allyID ) -> boolean
-
-Spring.GetPositionLosState jammed new in 95.0
-
- ( number x, number y, number z [, number allyID] )
-   -> boolean LosOrRadar, boolean inLos, boolean inRadar, boolean jammed
-
-jammed indicates if a position is actively being radar- or sonar-jammed by any allyteam
-
-
-Spring.GetClosestValidPosition //NOT FINISHED YET
-
- ( number unitDefID, number x, number z, number r ) -> nil
-
-Projectiles
-
-Spring.GetProjectilesInRectangle
-
-( number xmin, number zmin, number xmax, number zmax
-  [, boolean excludeWeaponProjectiles
-  [, boolean excludePieceProjectiles] ] )
-  -> nil | projectileTable = { [1] = number projectileID, etc... }
-
-Spring.GetProjectileOwnerID New in version 99.0
-
-  (number projectileID) -> nil | number unitID
-
-Spring.GetProjectileTeamID New in version 99.0
-
-  (number projectileID) -> nil | number teamID
-
-Spring.GetProjectileDefID
-
-  (number projectileID) -> nil | number weaponDefID
- using this to get a weaponDefID is HIGHLY preferred 
- to indexing WeaponDefNames via GetProjectileName
-
-Spring.GetProjectileName
-
- ( number projectileID ) -> nil | string name
-
-Spring.GetProjectileType
-
- ( number projectileID ) -> nil | boolean weapon, boolean piece
-
-Spring.GetProjectileTarget
-
- ( number projectileID )
- Pre 95.0:  -> nil | number targetID, string targetTypeStr
- Post 95.0: -> nil | [number targetTypeInt, number targetID | table targetPos = {x, y, z}]
-
- targetTypeStr can be one of: 
-   'u' - unit
-   'f' - feature
-   'p' - projectile
- while targetTypeInt is one of:
-   string.byte('g') := GROUND
-   string.byte('u') := UNIT
-   string.byte('f') := FEATURE
-   string.byte('p') := PROJECTILE
- 
-
-Spring.GetProjectileIntercepted New in version 99.0
-
- ( number projectileID ) -> nil | boolean isBeingIntercepted
-
-Spring.GetProjectilePosition
-
- ( number projectileID ) -> nil | number px, number py, number pz
-
-Spring.GetProjectileVelocity
-
- ( number projectileID ) -> nil | number vx, number vy, number vz
- New in version 95.0: returns (targetPos - startPos) for Beamlasers and similar weapons
-
-Spring.GetProjectileGravity
-
- ( number projectileID ) -> nil | number gravity
-
-Spring.GetPieceProjectileParams New in version 95.0
-
- ( number projectileID ) -> nil |  number explosionFlags, number spinAngle, 
- number spinSpeed, number spinVector.x, number spinVector.y, number spinVector.z
- Where explosionFlags use binary flags with the following integer equivalents: 
-  more info here
-  SHATTER = 1,  EXPLODE = 2, EXPLODE_ON_HIT = 2, FALL = 4, SMOKE = 8, FIRE = 16
-  NONE = 32, NO_CEG_TRAIL = 64, NO_HEATCLOUD = 128   
-
-Spring.GetProjectileTimeToLive New in version 99.0
-
- ( number projectileID ) -> nil | number ttl
-
-Spring.GetProjectileDirection New in version 95.0
-
- ( number projectileID ) -> nil | number dir.x, number dir.y, number dir.z
-
-Spring.GetProjectileSpinAngle Deprecated in 95.0
-
- ( number projectileID ) -> nil | number angle
-
-Spring.GetProjectileSpinSpeed Deprecated in 95.0
-
- ( number projectileID ) -> nil | number spinSpeed
-
-Spring.GetProjectileSpinVec Deprecated in 95.0
-
- ( number projectileID ) -> nil | number x, number y, number z
-
-
-Spring.GetProjectileDamages New in version 101.0
-
- ( number unitID, number weaponNum, string tag ) -> nil | number
- `tag` can be:
- "paralyzeDamageTime"
- "impulseFactor"
- "impulseBoost"
- "craterMult"
- "craterBoost"
- "dynDamageExp"
- "dynDamageMin"
- "dynDamageRange"
- "dynDamageInverted"
- "craterAreaOfEffect"
- "damageAreaOfEffect"
- "edgeEffectiveness"
- "explosionSpeed"
- - or -
- an armor type index to get the damage against it.
