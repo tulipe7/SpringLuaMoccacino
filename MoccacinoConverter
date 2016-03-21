@@ -1,52 +1,50 @@
---API Converter
+
+typeStrings={
+	["boolean"]="boolean",
+	["table"]="table",
+	["number"]="number",
+	["string"]="string",
+	["function"]="function",
+}
 
 
-	typeStrings={
-		["boolean"]="boolean",
-		["table"]="table",
-		["number"]="number",
-		["string"]="string",
-		["function"]="function",
-	}
-
-
-	typeMockValues={
-		["boolean"]="true",
-		["table"]="{exampletable= true}",
-		["number"]= "42",
-		["string"]="TestString",
-		["function"]= "function (bar) return bar; end",
-	}
+typeMockValues={
+	["boolean"]="true",
+	["table"]="{exampletable= true}",
+	["number"]= "42",
+	["string"]="TestString",
+	["function"]= "function (bar) return bar; end",
+}
 
 function generatePreample(outTable)
-outTable[#outTable+1]="--==================================================================================================\n"
+	outTable[#outTable+1]="--==================================================================================================\n"
 
-	outTable[#outTable+1]="--    Copyright (C) <2016>  <PicassoCT>\n"
+	outTable[#outTable+1]="-- Copyright (C) <2016> <PicassoCT>\n"
 
-    outTable[#outTable+1]="--This program is free software: you can redistribute it and/or modify\n"
-    outTable[#outTable+1]="--it under the terms of the GNU General Public License as published by\n"
-    outTable[#outTable+1]="--the Free Software Foundation, either version 3 of the License, or\n"
-    outTable[#outTable+1]="--(at your option) any later version.\n"
+	outTable[#outTable+1]="--This program is free software: you can redistribute it and/or modify\n"
+	outTable[#outTable+1]="--it under the terms of the GNU General Public License as published by\n"
+	outTable[#outTable+1]="--the Free Software Foundation, either version 3 of the License, or\n"
+	outTable[#outTable+1]="--(at your option) any later version.\n"
 
-    outTable[#outTable+1]="--This program is distributed in the hope that it will be useful,\n"
-    outTable[#outTable+1]="--but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
-    outTable[#outTable+1]="--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n"
-    outTable[#outTable+1]="--GNU General Public License for more details.\n"
+	outTable[#outTable+1]="--This program is distributed in the hope that it will be useful,\n"
+	outTable[#outTable+1]="--but WITHOUT ANY WARRANTY; without even the implied warranty of\n"
+	outTable[#outTable+1]="--MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the\n"
+	outTable[#outTable+1]="--GNU General Public License for more details.\n"
 
 	outTable[#outTable+1]="-- You should have received a copy of the GNU General Public License\n"
-	outTable[#outTable+1]="--along with this program.  If not, see <http://www.gnu.org/licenses/>.\n"
+	outTable[#outTable+1]="--along with this program. If not, see <http://www.gnu.org/licenses/>.\n"
 
 
-outTable[#outTable+1]="--==================================================================================================\n"
-outTable[#outTable+1]="--Variables for the MockUp\n"
-outTable[#outTable+1]="Spring ={}\n"
+	outTable[#outTable+1]="--==================================================================================================\n"
+	outTable[#outTable+1]="--Variables for the MockUp\n"
+	outTable[#outTable+1]="Spring ={}\n"
 
 	for k,v in pairs(typeStrings) do
 		outTable[#outTable+1] = k .."Mock ="..typeMockValues[k].."\n"
 	end
-outTable[#outTable+1]="--==================================================================================================\n"
-outTable[#outTable+1]="\n"
-return outTable
+	outTable[#outTable+1]="--==================================================================================================\n"
+	outTable[#outTable+1]="\n"
+	return outTable
 end
 
 
@@ -57,11 +55,11 @@ function getFirstVisibileAscii(line, index)
 
 		asciival= string.byte(line, i)
 
-	if asciival then
-		if (asciival > 48 and asciival < 58) or(asciival > 64 and asciival < 91) or (asciival < 123 and asciival > 96) then
-			return i
+		if asciival then
+			if (asciival > 48 and asciival < 58) or(asciival > 64 and asciival < 91) or (asciival < 123 and asciival > 96) then
+				return i
+			end
 		end
-	end
 
 	end
 	return -1
@@ -105,25 +103,25 @@ function sanitizeWord(word)
 
 	coma= string.find(word,",")
 	if coma then
-	word=string.sub(word,1,coma-1)
+		word=string.sub(word,1,coma-1)
 	end
 
 	goose= string.find(word,"\"")
 	if goose then
-	word=string.sub(word,1,goose-1)
+		word=string.sub(word,1,goose-1)
 	end
 
 	goose= string.find(word,"]")
 	if goose then
-	word=string.sub(word,1,goose-1)
+		word=string.sub(word,1,goose-1)
 	end
 
 	goose= string.find(word,"%)")
 	if goose then
-	word=string.sub(word,1,goose-1)
+		word=string.sub(word,1,goose-1)
 	end
 
-return word
+	return word
 end
 
 
@@ -139,7 +137,31 @@ function getWord(line, wordStart)
 	return word, wordStart, wordEnd
 end
 
+boolLastLineContainedArgument=false
 
+function getHead(HeaderEnd,line)
+	functionNameEnd=string.find(line," ", HeaderEnd+1)
+	functionName=string.sub(line,HeaderEnd+1,functionNameEnd)
+	processedString= "Spring."..functionName.. " = function ".." ( "
+	boolFoundHeader=true
+	boolValidHead=true
+
+	return functionNameEnd, functionName,processedString, boolFoundHeader, boolValidHead
+end
+
+function handleTables (line)
+tableStart= string.find(line,"{")
+tableEnd = string.find(line, "}")
+
+if tableStart and tableEnd then
+line = string.sub(line,1,tableStart-1).." table mock ,"..string.sub(line,tableEnd+1,string.len(line))
+elseif tableStart then
+line = string.sub(line,1,tableStart-1).." table mock ,"
+elseif tableEnd then
+line =string.sub(line,tableEnd+1,string.len(line))
+end
+return line
+end
 
 function getArguments(line, start, endArg, isReturnData)
 	ret={numberArguments= 0, [""]=""}
@@ -152,7 +174,7 @@ function getArguments(line, start, endArg, isReturnData)
 		braceOpen =string.find(line,"%(")
 		braceClose =string.find(line,"%)")
 		if braceOpen and braceClose then
-		line= string.sub(line,braceOpen,braceClose)
+			line= string.sub(line,braceOpen,braceClose)
 		end
 		line=trim(line)
 
@@ -170,8 +192,8 @@ function getArguments(line, start, endArg, isReturnData)
 		nilFound, nilEnd= string.find(line,"nil")
 		nilfound, nilEnd= string.find(line, "|",nilEnd)
 		if nilEnd then
-		line=string.sub(line,nilEnd+1)
-		nextor=string.find(line,"|", nilEnd) or string.find(line,"%)")
+			line=string.sub(line,nilEnd+1)
+			nextor=string.find(line,"|", nilEnd) or string.find(line,"%)")
 		end
 	end
 
@@ -191,6 +213,9 @@ function getArguments(line, start, endArg, isReturnData)
 	wordEnd=1
 	word = ""
 	argCounter=0
+	boolLastLineContainedArgument=false
+
+	line = handleTables(line)
 
 	while boolFoundSomething == true and argCounter < 15 do
 		boolFoundSomething=false
@@ -203,30 +228,32 @@ function getArguments(line, start, endArg, isReturnData)
 			numberArguments= numberArguments+1
 
 			if	isReturnData then
-					ret[numberArguments]={}
-    		        ret[numberArguments].types =currentType
-    		        ret[numberArguments].value ="PlaceHolder"
+				ret[numberArguments]={}
+				ret[numberArguments].types =currentType
+				ret[numberArguments].value ="ReturnValue"
+				boolLastLineContainedArgument=true
+				--skip the next word
+				boolFoundSomething=true
+				boolTypeFound = true
+			else
 
-					return ret
+				word, wordStart,wordEnd = getWord(line, wordEnd)
+				boolTypeFound = true
+				boolFoundSomething=true
 			end
-
-
-			word, wordStart,wordEnd = getWord(line, wordEnd)
-			boolTypeFound = true
-			boolFoundSomething=true
 		end
 
-		if word and boolTypeFound == true or isReturnData then
+		if word and boolTypeFound == true then
 			--	print("VarName:"..word)
-					ret[numberArguments]={}
-					ret[numberArguments].types =currentType
-    		        ret[numberArguments].value =word
+			ret[numberArguments]={}
+			ret[numberArguments].types =currentType
+			ret[numberArguments].value =word
 
 
-				boolFoundSomething= true
-				boolTypeFound=false
-				word = nil
-	    end
+			boolFoundSomething= true
+			boolTypeFound=false
+			word = nil
+		end
 
 	end
 
@@ -234,130 +261,187 @@ function getArguments(line, start, endArg, isReturnData)
 	return ret
 end
 
+function twoEmptyInARow(line, LineCount)
+	if getFirstVisibileAscii(line,1) == -1 then
+	LineCount=LineCount+1
+	end
+
+	if  LineCount> 2 then
+	return true, 0
+	else
+	return false, LineCount
+	end
+end
+
+function createArgsAssert(line,ArgEnd)
+
+			lineEnd= ArgEnd or string.find(line,"%)")
+			boolMatchArgumentsStart = true
+			argumentsTable = getArguments(line,ArgStart ,lineEnd)
+
+			number=0
+			total=(argumentsTable).numberArguments
+			argumentsTable.numberArguments=nil
+			for i=1, #argumentsTable do
+				local element= argumentsTable[i]
+
+				types=element.types
+				value=element.value
+
+				if types ~= "" then
+					processedString=processedString.." "..value
+
+					number = number + 1
+					if number > 0 then
+						processedString= processedString.. ","
+					end
+
+					assertString = assertString.. "assert(type("..value..") == \""..types.."\",\"Argument ".. value.." is of invalid type - expected "..types.."\");\n"
+				end
+			end
+return  assertString,processedString,boolMatchArgumentsStart
+end
+
+function main()
+	print("Main reached")
+	file = io.open("api.txt","r")
+
+	outPut={}
+	outPut=generatePreample(outPut)
 
 
-file = io.open("api.txt","r")
-
-outPut={}
-outPut=generatePreample(outPut)
-
-boolFoundHeader=false
-boolMatchArgumentsStart=false
-boolMatchArgumentsEnded=false
-
-Puffer={}
-boolValidArg=false
-boolValidTail=false
-boolValidHead=false
-for line in file:lines() do
-
-	assertString=""
-	returnString=""
-	comentString= ""
-	processedString =""
+	Puffer={}
 
 
-	Header,HeaderEnd = string.find(line, "Spring.")
-	ArgStart = string.find(line,"%(")
-	ArgEnd = string.find(line,"%)")
-	Return,ReturnEnd = string.find(line, "->")
-
-
-	if Header and boolFoundHeader == false then
-		Puffer={}
-		--Reset all the Strings
+	for line in file:lines() do
+		boolRestart=false
 		assertString=""
 		returnString=""
 		comentString= ""
+		processedString =""
 
 
-		functionNameEnd=string.find(line," ", HeaderEnd+1)
-		functionName=string.sub(line,HeaderEnd+1,functionNameEnd)
-		processedString= "Spring."..functionName.. " = function ".." ( "
-		boolFoundHeader=true
-		boolValidHead=true
+	Header,HeaderEnd = string.find(line, "Spring.")
+
+	while boolRestart == false and not Header do
+	line=	io.read("*line")
+	Header,HeaderEnd = string.find(line, "Spring.")
+
+
+	--read lines till you found the header
+		if boolRestart== false and Header  then
+			Puffer={}
+			--Reset all the Strings
+			assertString=""
+			returnString=""
+			comentString= ""
+
+			functionNameEnd, functionName,processedString, boolFoundHeader, boolValidHead= getHead(HeaderEnd,line)
+		end
+
 	end
 
 
-	if boolFoundHeader== true and (ArgStart or boolMatchArgumentsStart == true) then
-		--	print("Starting Production of Arguments")
-		lineEnd= ArgEnd or string.find(line,"%)")
-		boolMatchArgumentsStart = true
-		argumentsTable = getArguments(line,ArgStart ,lineEnd)
+	--try to get the argstart
+	ArgStart = string.find(line,"%(")
+	LineCount=0
+	--if no argstart fast forward
+	while boolRestart == false  and not ArgStart do
+		line=	io.read("*line")
+		ArgStart = string.find(line,"%(")
+			--if no many arguments found skip forward
+			if not ArgStart then
+			boolRestart,LineCount = twoEmptyInARow(line, LineCount)
+			end
+	end
 
-		number=0
-		total=(argumentsTable).numberArguments
-		argumentsTable.numberArguments=nil
-		for i=1, #argumentsTable do
-		local element= argumentsTable[i]
 
-		types=element.types
-		value=element.value
+	boolArgContinueCounter= true
 
-		if types ~= "" then
-				processedString=processedString.." "..value
+	-- process arguments
+	while  boolRestart == false  and boolArgContinueCounter == true do
 
-				number = number + 1
-				if number > 0 then
-					processedString= processedString.. ","
+		assertString, processedString = createArgsAssert(line,ArgEnd)
+
+			processedString=string.sub(processedString,1,string.len(processedString)-1)
+
+
+		ArgEnd 	 = string.find(line,"%)")
+		if ArgEnd then
+			boolArgContinueCounter= false
+			processedString=processedString..")\n"
+		end
+
+	end
+
+	--Search for the Return Types
+	_,ReturnEnd = string.find(line, "->")
+	while boolRestart == false  and not ReturnEnd do
+
+		line=	io.read("*line")
+		_, ReturnEnd = string.find(line,"->")
+			--if no many arguments found skip forward
+			if not ArgStart then
+			boolRestart,LineCount = twoEmptyInARow(line, LineCount)
+			end
+	end
+
+	if ReturnEnd then returnString= "return "end
+	boolOneLineEmpty=false
+
+	--handle the return arguments
+	while boolRestart == false and boolOneLineEmpty==false do
+
+			argumentsTable = getArguments(line, ReturnEnd, string.len(line),true)
+
+
+			argumentsTable.numberArguments=nil
+
+			for i=1, #argumentsTable do
+				local element= argumentsTable[i]
+
+				types=element.types
+				value=element.value
+
+				if types and types ~="" then
+					returnString=returnString.." "..types.."Mock"..","
 				end
-
-				assertString = assertString.. "assert(type("..value..") == \""..types.."\",\"Argument ".. value.." is of invalid type - expected "..types.."\");\n"
 			end
+
+
+
+
+		line=	io.read("*line")
+		if getFirstVisibileAscii(line,1) == -1 then
+			returnString= string.sub(returnString,1,string.len(returnString)-1)
+			boolOneLineEmpty=true
 		end
 
 	end
 
-	if boolMatchArgumentsStart== true and ArgEnd then
-		boolMatchArgumentsStart=false
-		boolMatchArgumentsEnded=true
-		processedString=string.sub(processedString,1,string.len(processedString)-1)
-		processedString=processedString..")\n"
-	end
+
+	if boolRestart== false then
+
+		Puffer[#Puffer+1]=comentString..processedString..assertString..returnString.."\n end\n\n"
 
 
-	if Return and boolMatchArgumentsEnded == true then
 
-		argumentsTable = getArguments(line, ReturnEnd, string.len(line),true)
-		returnString= "return "
-		argumentsTable.numberArguments=nil
-
-		for i=1, #argumentsTable do
-		local element= argumentsTable[i]
-
-		types=element.types
-		value=element.value
-
-			if types and types ~="" then
-				returnString=returnString.." "..types.."Mock"..","
+			for i=1, #Puffer do
+				outPut[#outPut+1] = Puffer[i]
 			end
-		end
-		returnString= string.sub(returnString,1,string.len(returnString)-1)
-		returnString= returnString.. "\n end\n\n"
-		boolFoundHeader=false
-		boolMatchArgumentsStart=false
-		boolMatchArgumentsEnded=false
-		boolValidTail=true
-	end
+			Puffer={}
 
-	Puffer[#Puffer+1]=comentString..processedString..assertString..returnString
-
-	boolValidArg = boolValidHead == true and boolValidTail== true
-	if boolValidArg then
-
-		for i=1, #Puffer do
-			outPut[#outPut+1] = Puffer[i]
-		end
-		Puffer={}
-		boolValidArg=false
-		boolValidTail=false
-        boolValidHead=false
 	end
 end
 
-file = io.open("out.txt","w")
-io.output(file)
 
-for i=1,#outPut, 1 do
-	io.write(outPut[i])
+	file = io.open("out.txt","w")
+	io.output(file)
+
+	for i=1,#outPut, 1 do
+		io.write(outPut[i])
+	end
+
 end
+
+main()
