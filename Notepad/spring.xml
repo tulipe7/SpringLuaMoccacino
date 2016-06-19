@@ -2,7 +2,7 @@
 <?xml version="1.0" encoding="Windows-1252" ?>
 <NotepadPlus>
     <Environment ignoreCase="yes" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" additionalWordChar=".:" />
-    <AutoComplete language="LUA">
+    <AutoComplete language="SPRING_LUA">
         <KeyWord name="and" func="no" />
         <KeyWord name="assert" func="yes">
             <Overload retVal="void" descr="
