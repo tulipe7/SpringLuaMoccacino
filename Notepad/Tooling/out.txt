@@ -1,0 +1,2414 @@
+
+<KeyWord name="Spring.AddGrass" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddMapLight " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="lightParams table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddModelLight " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="lightParams table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddSmoothMesh " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+ 	<Param name="height number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddTeamResource" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="teamID number"/>
+ 	<Param name="metal string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddUnitDamage" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddUnitIcon" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="iconName string"/>
+<Param name="texFile string"/>
+<Param name="size number"/>
+<Param name="dist number"/>
+<Param name="radAdjust boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddUnitImpulse" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddUnitResource" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="m string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddUnitSeismicPing" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="pingSize number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddWorldIcon" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="cmdID number"/>
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddWorldText" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="text string"/>
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AddWorldUnit" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AdjustHeightMap " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AdjustSmoothMesh" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AreHelperAIsEnabled" func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ArePlayersAllied"    func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+   	<Param name="number playerID" />
+	  	<Param name="number playerID1" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AreTeamsAllied"    func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+  	<Param name="number teamID" />
+  	<Param name="number teamID1" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AssignMouseCursor" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.AssignPlayerToTeam " func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+ 	<Param name="playerID number"/>
+ 	<Param name="teamID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.CallCOBScriptCB" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="funcID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ClearWatchdogTimer " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="threadName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.CreateDir " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="path number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.CreateUnit" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.DestroyFeature" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.DestroyUnit" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.DiffTimers" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="timercur number"/>
+<Param name="timerago number"/>
+<Param name="inMilliseconds boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.DrawUnitCommands" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.Echo" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.EditUnitCmdDesc" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+
+ 	<Param name="unitID number"/>
+ 	<Param name="cmdDescID number"/>
+ 	<Param name="cmdArray table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ExtractModArchiveFile" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="modfile string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.FixedAllies" func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ForceLayoutUpdate " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.FreeUnitIcon" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="iconName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetAIInfo"     func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetActionHotKeys" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="action string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetActiveCmdDesc" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="index number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetActiveCmdDescs" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetActiveCommand" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetActivePage" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetAllUnits" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetAllyTeamInfo"   func="yes">
+ <Overload retVal="table" descr="Descprition missing ">
+    <Param name="number allyteamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetAllyTeamList" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetAllyTeamStartBox"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+   <Param name="number allyID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetBuildFacing" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetBuildSpacing" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCOBScriptID" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="funcName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCameraDirection" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCameraFOV" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCameraNames" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCameraPosition" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCameraState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCameraVectors" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetClipboard " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCmdDescIndex" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="cmdID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetConfigInt " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="name string"/>
+<Param name="default number"/>
+<Param name="setInOverlay boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetConfigParams " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetConfigString " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="name string"/>
+<Param name="default string"/>
+<Param name="setInOverlay boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetConsoleBuffer" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="maxLines number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetCurrentTooltip" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetDefaultCommand" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetDrawFrame" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetDrawSelectionInfo " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetFPS" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetFrameTimeOffset" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGameFrame" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGameRulesParam" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+   <Param name="number ruleIndex" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGameRulesParams" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGameSeconds" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGameSpeed " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGatherMode" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupAIList" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupAIName" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="groupID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupList" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupUnits" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="groupID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupUnitsCount" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="groupID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupUnitsCounts" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="groupID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetGroupUnitsSorted" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="groupID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetHasLag" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetHeadingFromVector" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number x" />
+   <Param name="number y" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetInvertQueueKey" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetKeyBindings" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="keyset string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetKeyCode" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="keysym string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetKeyState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="key number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetKeySymbol" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="key number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLastMessagePositions" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLastUpdateSeconds" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLocalAllyTeamID" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLocalPlayerID" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLocalTeamID" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLogSections" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetLosViewColors" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMapDrawMode" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMapOptions" func="yes">
+ <Overload retVal="string" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMapSquareTexture" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="texSqrX number"/>
+<Param name="texSqrY number"/>
+<Param name="texMipLvl number"/>
+<Param name="luaTexName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMiniMapDualScreen" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMiniMapGeometry" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetModKeyState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetModOptions" func="yes">
+ <Overload retVal="string" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetModOptions.exampleOption "  func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetModUICtrl" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMouseCursor" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMouseStartPosition" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="mouseButton number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMouseState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMyAllyTeamID" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMyPlayerID" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetMyTeamID" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPixelDir " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPlayerControlledUnit"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number playerID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPlayerInfo"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number playerID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPlayerList"     func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPlayerRoster" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="sortType number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPlayerTraffic" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="playerID number"/>
+<Param name="packetID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetPressedKeys" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetReplayLength " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetRulesInfoMap " func="yes">
+ <Overload retVal="string" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetScreenGeometry " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSelectedGroup" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSelectedUnits" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSelectedUnitsCount" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSelectedUnitsCounts" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSelectedUnitsSorted" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSideData"    func="yes">
+ <Overload retVal="string" descr="Descprition missing ">
+  <Param name="number sideName" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSoundStreamTime" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetSpectatingState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamColor" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="teamID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamInfo"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamList"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number allyTeamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamLuaAI"     func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+  	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamOrigColor" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="teamID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamResourceStats "   func="yes">
+<Overload>
+    <Param name="number metal" />
+	<Param name="number teamID" />
+
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamResources"  func="yes" > 
+<Overload retVal="number" descr="Descprition missing ">
+	<Param name="string type(metal/energy)" />
+    <Param name="number teamID" />
+</Overload>	  
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamRulesParam"  func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number index" />
+	   <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamRulesParams"   func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamStartPosition" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamStatsHistory"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+
+ 	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnitCount"  func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnitDefCount" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+   	<Param name="number teamID" />
+	 	<Param name="number unitDefID" />
+		 	<Param name="number unitDefID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnitStats"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+     <Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnits"  func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+  	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnitsByDefs"   func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+  	<Param name="number teamID" />
+	 	<Param name="number unitDefID" />
+		 	<Param name="number unitDefID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnitsCounts"  func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+ 	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTeamUnitsSorted"  func="yes">
+<Overload>
+	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetTimer" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitGroup" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitIsDead"   func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+     <Param name="number unitID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitLuaDraw" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitNearestAlly"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+ <Param name="number range" />
+ <Param name="number unitID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitNearestEnemy"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+  <Param name="number range" />
+ <Param name="number unitID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitNoDraw" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitNoMinimap" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitNoSelect" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitRulesParam"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+   <Param name="number index" />
+   <Param name="number unitID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitRulesParams"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+  <Param name="number unitID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitTransformMatrix" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="invert boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitViewPosition" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="midPos boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitsInBox" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitsInCylinder"   func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+ 	<Param name="number radius" />
+ 	<Param name="number z" />
+ 	<Param name="number teamID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitsInPlanes" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitsInRectangle"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+   	<Param name="number xmin" />
+	  	<Param name="number teamID" />
+		  	<Param name="number zmin" />
+			  	<Param name="number xmin" />
+					<Param name="number zmax" />
+					<Param name="number xmax" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetUnitsInSphere"   func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+ 	<Param name="number radius" />
+ 	<Param name="number y" />
+ 	<Param name="number z" />
+ 	<Param name="number c" />
+ 	<Param name="number teamID" />
+ 	<Param name="number x" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetVectorFromHeading"    func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+  <Param name="number heading" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetViewGeometry" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetVisibleFeatures" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="allyTeamID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetVisibleProjectiles " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetVisibleUnits" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="teamID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetWaterMode" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetWind" func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GetWindowGeometry" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrder " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderArrayToUnitArray " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderArrayToUnitArray " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderArrayToUnitMap " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderArrayToUnitMap " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderToUnit " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderToUnit " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderToUnitArray " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderToUnitArray " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderToUnitMap " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.GiveOrderToUnitMap " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.HaveAdvShading" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.HaveShadows" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.InsertUnitCmdDesc" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="cmdDescID number"/>
+ 	<Param name="cmdArray table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsAABBInView" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsAboveMiniMap" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsDevLuaEnabled" func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsEditDefsEnabled" func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsGUIHidden" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsGameOver" func="yes">
+ <Overload retVal="boolean" descr="Descprition missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsReplay" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsSphereInView" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+<Param name="radius number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsUnitAllied" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsUnitIcon" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsUnitInView" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsUnitSelected" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.IsUnitVisible" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="radius number"/>
+<Param name="checkIcons boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.LevelHeightMap" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.LevelSmoothMesh" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.LoadCmdColorsConfig " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="config string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.LoadCtrlPanelConfig " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="config string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.LoadSoundDef" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="soundfile string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.Log" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.MarkerAddLine " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x1 number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.MarkerAddPoint " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+<Param name="text string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.MarkerErasePosition " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.PauseSoundStream" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.PlaySoundFile " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="soundfile string"/>
+<Param name="volume number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.PlaySoundStream" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="oggfile string"/>
+<Param name="volume number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.Reload" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="startscript string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.RemoveBuildingDecal" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.RemoveGrass" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.RemoveUnitCmdDesc" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="cmdDescID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ReplaceMouseCursor " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="oldFileName string"/>
+<Param name="newFileName string"/>
+<Param name="hotSpotTopLeft boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.Restart" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="commandline_ string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.RevertHeightMap" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.RevertSmoothMesh" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SelectUnitArray" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitIDs table"/>
+<Param name="append boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SelectUnitMap" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="keyUnitIDvalueAnything table"/>
+<Param name="append boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendCommands " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="command1 string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendLuaGaiaMsg " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendLuaRulesMsg" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendLuaUIMsg " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="message string"/>
+<Param name="mode string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendMessage" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendMessageToAllyTeam" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="allyID number"/>
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendMessageToPlayer" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="playerID number"/>
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendMessageToSpectators" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendMessageToTeam" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="teamID number"/>
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SendSkirmishAIMessage " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="aiTeam number"/>
+<Param name="message string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetActiveCommand " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="action string"/>
+<Param name="actionExtra string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetAlly " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="firstAllyTeamID number"/>
+ 	<Param name="secondAllyTeamID number"/>
+ 	<Param name="ally boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetAtmosphere " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="params table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetBuildFacing" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="Facing number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetBuildSpacing" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="Spacing number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetCameraOffset " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetCameraState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="camState table"/>
+<Param name="camTime number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetCameraTarget" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+<Param name="transTime number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetClipboard " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="text string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetConfigInt " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="name string"/>
+<Param name="value number"/>
+<Param name="useOverlay boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetConfigString " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="name string"/>
+<Param name="value string"/>
+<Param name="useOverlay boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetCustomCommandDrawData " func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawGround" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="drawGround boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawGroundDeferred" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="Activate boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawModelsDeferred " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="Activate boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawSelectionInfo" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="drawSelectionInfo boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawSelectionInfo" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="drawSelectionInfo boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawSky" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="drawSky boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetDrawWater" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="drawWater boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetExperienceGrade" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureAlwaysVisible" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="enable boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureBlocking " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="funcID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureBlocking " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="funcID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureCollisionVolumeData" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureDirection" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureHealth" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="health number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeaturePosition" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+ 	<Param name="snapToGround boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureReclaim" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="reclaimLeft number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureResurrect" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="UnitDefName string"/>
+ 	<Param name="facing number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetFeatureVelocity " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+
+ 	<Param name="featureID number"/>
+ 	<Param name="noSelect boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetGameRulesParam" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="paramName string"/>
+</Overload>  stringMock
+</KeyWord>
+
+<KeyWord name="Spring.SetHeightMap " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+ 	<Param name="height number"/>
+ 	<Param name="terraform number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetHeightMapFunc" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetLastMessagePosition" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetLogSectionFilterLevel" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="sectionName string"/>
+<Param name="logLevel number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetLosViewColors " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="always table"/>
+<Param name="LOS table"/>
+<Param name="radar table"/>
+<Param name="jam table"/>
+<Param name="radar2 table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMapLightTrackingState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMapShader" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="standardShaderID number"/>
+<Param name="deferredShaderID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMapShadingTexture" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="texType string"/>
+<Param name="texName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMapSquareTerrainType" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMapSquareTexture" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="texSqrX number"/>
+<Param name="texSqrY number"/>
+<Param name="luaTexName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMetalAmount " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+ 	<Param name="metalAmount number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetModelLightTrackingState" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetMouseCursor " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="cursorName string"/>
+<Param name="scale number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetNoPause" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+ 	<Param name="noPause boolean"/>
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetPieceProjectileParams " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileAlwaysVisible " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projectileID number"/>
+ 	<Param name="alwaysVisible boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileCEG" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="ceg_ string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileCollision" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileDamages " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="weaponNum number"/>
+ 	<Param name="damages table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileGravity" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="grav number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileIsIntercepted " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileMoveControl " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ projID, enable)
+ 	<Param name="projID number"/>
+ 	<Param name="enable boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectilePosition" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileSpinAngle " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="spinAngle number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileSpinSpeed " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="speed number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileSpinVec " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileTarget" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetProjectileVelocity" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="projID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetRadarErrorParams " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetShareLevel " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="metal string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSmoothMesh " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+ 	<Param name="height number"/>
+ 	<Param name="terraform number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSmoothMeshFunc" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSoundStreamVolume" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="volume number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSunDirection" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="dirX number"/>
+<Param name="dirY number"/>
+<Param name="dirZ number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSunLighting " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="params table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSunManualControl" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="setManualControl boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetSunParameters" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="dirX number"/>
+<Param name="dirY number"/>
+<Param name="dirZ number"/>
+<Param name="dist number"/>
+<Param name="startTime number"/>
+<Param name="orbitTime number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetTeamColor" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="teamID number"/>
+<Param name="r number"/>
+<Param name="g number"/>
+<Param name="b number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetTeamResource" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="teamID number"/>
+ 	<Param name="res string"/>
+ 	<Param name="amount number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetTeamRulesParam" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="teamID number"/>
+ 	<Param name="paramName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetTeamShareLevel" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="teamID number"/>
+ 	<Param name="metal string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetTerrainTypeData" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitAlwaysVisible" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="alwaysVisible boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitArmored " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="armored boolean"/>
+ 	<Param name="armorMultiple number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitBlocking " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="depth number"/>
+ 	<Param name="range number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitBlocking " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="depth number"/>
+ 	<Param name="range number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitBuildSpeed" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitCOBValue" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="COBValue number"/>
+ 	<Param name="param1 number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitCloak" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitCollisionVolumeData " func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitCollisionVolumeData " func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitCosts" func="yes">
+ <Overload retVal="nil" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitCrashing " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="crashing boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitDefIcon " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitDefID number"/>
+<Param name="iconName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitDefImage " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitDefID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitDirection " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="y number"/>
+ 	<Param name="z number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitExperience" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="experience number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitFlanking" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="mode string"/>
+ 	<Param name="mode number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitFuel" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="fuel number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitGroup " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="groupID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitHarvestStorage " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitid number"/>
+ 	<Param name="metal number"/>
+
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitHealth" func="yes">
+ <Overload retVal="nil" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitLeaveTracks" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="leavetracks boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitLineage " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="teamID number"/>
+ 	<Param name="isRoot boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitLoadingTransport " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="passengerID number"/>
+ 	<Param name="transportID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitLosMask" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="allyTeam number"/>
+ 	<Param name="los number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitLosState" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="allyTeam number"/>
+ 	<Param name="los number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitMaxHealth" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="maxHealth number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitMaxRange" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="maxRange number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitMidAndAimPos " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="radius number"/>
+ 	<Param name="height number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitMidAndAimPos " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="radius number"/>
+ 	<Param name="height number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitMoveGoal " func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="goalx number"/>
+ 	<Param name="goaly number"/>
+ 	<Param name="goalz number"/>
+ 	<Param name="goalRadius number"/>
+ 	<Param name="moveSpeed number"/>
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitNanoPieces " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="builderID number"/>
+ 	<Param name="pieces table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitNeutral" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="neutral boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitNoDraw " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="noDraw boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitNoMinimap " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="noMinimap boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitNoSelect " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="unitID number"/>
+<Param name="noSelect boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitPieceCollisionVolumeData" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitPieceParent " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="AlteredPiece number"/>
+ 	<Param name="ParentPiece number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitPosErrorParams " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitPosition" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="x number"/>
+ 	<Param name="z number"/>
+ 	<Param name="alwaysAboveSea boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitRadiusAndHeight " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="radius number"/>
+ 	<Param name="height number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitResourcing" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitRotation" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="rotx number"/>
+ 	<Param name="roty number"/>
+ 	<Param name="rotz number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitRulesParam" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="paramName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitSensorRadius" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="type string"/>
+ 	<Param name="radius number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitShieldState" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="weaponID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitSonarStealth" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="sonarStealth boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitStealth" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="stealth boolean"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitStockpile" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="stockpile number"/>
+ 	<Param name="buildPercent number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitTarget " func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitToFeature" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+ 	<Param name="tofeature boolean"/>
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitTooltip" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="tooltip string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitTravel" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="travel number"/>
+ 	<Param name="travelPeriod number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitVelocity" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="velx number"/>
+ 	<Param name="vely number"/>
+ 	<Param name="velz number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitWeaponDamages " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="weaponNum number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetUnitWeaponState" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="weaponNum number"/>
+ 	<Param name="states table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetWMCaption " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="title string"/>
+<Param name="titleShort string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetWMIcon " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="iconFileName string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SetWaterParams " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="params table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ShareResources " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="teamID number"/>
+<Param name="units string"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.ShareTeamResource " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="teamID_ number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.SpawnCEG" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.SpawnProjectile" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="weaponDefID number"/>
+ 	<Param name="projectileParams table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.StopSoundStream" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.TraceScreenRay" func="yes">
+<Overload retVal="number" descr="Description missing ">
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.TransferFeature" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="featureID number"/>
+ 	<Param name="teamID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.TransferUnit" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.UnitAttach " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="transporterID number"/>
+ 	<Param name="passengerID number"/>
+ 	<Param name="pieceNum number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UnitDetach " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="passengerID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UnitDetachFromAir " func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="passengerID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UnitWeaponFire" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="weaponID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UnitWeaponHoldFire" func="yes">
+ <Overload retVal="number" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="weaponID number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UpdateMapLight" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="lightHandle number"/>
+<Param name="lightParams table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UpdateModelLight" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="lightHandle number"/>
+<Param name="lightParams table"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.UseTeamResource" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.UseUnitResource" func="yes">
+ <Overload retVal="boolean" descr="Description missing ">
+ 	<Param name="unitID number"/>
+ 	<Param name="m string"/>
+</Overload>  booleanMock
+</KeyWord>
+
+<KeyWord name="Spring.ValidUnitID"  func="yes">
+ <Overload retVal="number" descr="Descprition missing ">
+    <Param name="number unitID" />
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.WarpMouse " func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+</Overload>
+</KeyWord>
+
+<KeyWord name="Spring.WorldToScreenCoords" func="yes">
+<Overload retVal="number" descr="Description missing ">
+<Param name="x number"/>
+<Param name="y number"/>
+<Param name="z number"/>
+</Overload>
+</KeyWord>
