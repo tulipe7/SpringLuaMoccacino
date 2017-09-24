@@ -24,3 +24,11 @@ This does not simulate the engine, the returned value are just mockup Values.
 There is also no checking of the handed over values for valid range.
 Feel free to implement that.
 
+
+Install Instructions for IDEA: 
+(Found in the SDK folder)
+https://bitbucket.org/sylvanaar2/lua-for-idea/wiki/Installing_a_Custom_API
+
+Install Instructions for Notepad:
+(Found in the Notepad folder)
+http://docs.notepad-plus-plus.org/index.php/Auto_Completion
