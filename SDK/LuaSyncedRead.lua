@@ -22,228 +22,228 @@ functionMock =function (bar) return bar; end
 
 --==================================================================================================
 
-Spring.IsDevLuaEnabled = function  ( )
+function Spring.IsDevLuaEnabled   ( )
 return  booleanMock
  end
 
-Spring.IsEditDefsEnabled = function  ( )
+function Spring.IsEditDefsEnabled   ( )
 return  booleanMock
  end
 
-Spring.AreHelperAIsEnabled = function  ( )
+function Spring.AreHelperAIsEnabled   ( )
 return  booleanMock
  end
 
-Spring.FixedAllies = function  ( )
+function Spring.FixedAllies   ( )
 return  booleanMock
  end
 
-Spring.IsGameOver = function  ( )
+function Spring.IsGameOver   ( )
 return  booleanMock
  end
 
-Spring.GetRulesInfoMap  = function  ( )
+function Spring.GetRulesInfoMap    ( )
 return  stringMock
  end
 
-Spring.GetGameRulesParam = function  (  ruleIndex)
+function Spring.GetGameRulesParam   (  ruleIndex)
 assert(type(ruleIndex) == "number","Argument ruleIndex is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetGameRulesParams = function  ( )
+function Spring.GetGameRulesParams   ( )
 return  numberMock
  end
 
-Spring.GetTeamRulesParam = function  (  index, teamID,)
+function Spring.GetTeamRulesParam   (  index, teamID,)
 assert(type(index) == "number","Argument index is of invalid type - expected number");
 assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamRulesParams = function  (  teamID)
+function Spring.GetTeamRulesParams   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitRulesParam = function  (  index, unitID,)
+function Spring.GetUnitRulesParam   (  index, unitID,)
 assert(type(index) == "number","Argument index is of invalid type - expected number");
 assert(type(unitID,) == "number","Argument unitID, is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitRulesParams = function  (  unitID)
+function Spring.GetUnitRulesParams   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetModOptions = function  ( )
+function Spring.GetModOptions   ( )
 return  stringMock
  end
 
-Spring.GetMapOptions = function  ( )
+function Spring.GetMapOptions   ( )
 return  stringMock
  end
 
-Spring.GetModOptions.exampleOption)  = function  ()
+function Spring.GetModOptions.exampleOption)    ()
 )
 )
 return  numberMock
  end
 
-Spring.GetGameFrame = function  ( )
+function Spring.GetGameFrame   ( )
 return  numberMock
  end
 
-Spring.GetGameSeconds = function  ( )
+function Spring.GetGameSeconds   ( )
 return  numberMock
  end
 
-Spring.GetWind = function  ( )
+function Spring.GetWind   ( )
 return  numberMock
  end
 
-Spring.GetHeadingFromVector = function  (  x,, z)
+function Spring.GetHeadingFromVector   (  x,, z)
 assert(type(x,) == "number","Argument x, is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetVectorFromHeading = function  (  heading)
+function Spring.GetVectorFromHeading   (  heading)
 assert(type(heading) == "number","Argument heading is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetSideData = function  (  sideName)
+function Spring.GetSideData   (  sideName)
 assert(type(sideName) == "string","Argument sideName is of invalid type - expected string");
 return  stringMock
  end
 
-Spring.GetAllyTeamStartBox = function  (  allyID)
+function Spring.GetAllyTeamStartBox   (  allyID)
 assert(type(allyID) == "number","Argument allyID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamStartPosition = function  (  teamID)
+function Spring.GetTeamStartPosition   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetPlayerList = function  (  teamID)
+function Spring.GetPlayerList   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamList = function  (  allyTeamID)
+function Spring.GetTeamList   (  allyTeamID)
 assert(type(allyTeamID) == "number","Argument allyTeamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetAllyTeamList = function  ( )
+function Spring.GetAllyTeamList   ( )
 return  numberMock
  end
 
-Spring.GetPlayerInfo = function  (  playerID)
+function Spring.GetPlayerInfo   (  playerID)
 assert(type(playerID) == "number","Argument playerID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetPlayerControlledUnit = function  (  playerID)
+function Spring.GetPlayerControlledUnit   (  playerID)
 assert(type(playerID) == "number","Argument playerID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetAIInfo = function  (  teamID)
+function Spring.GetAIInfo   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetAllyTeamInfo = function  (  allyteamID)
+function Spring.GetAllyTeamInfo   (  allyteamID)
 assert(type(allyteamID) == "number","Argument allyteamID is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.GetTeamInfo = function  (  teamID)
+function Spring.GetTeamInfo   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamResources = function  (  metal", teamID,)
+function Spring.GetTeamResources   (  metal", teamID,)
 assert(type(metal") == "string","Argument metal" is of invalid type - expected string");
 assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
 return
  end
 
-Spring.GetTeamUnitStats = function  (  teamID)
+function Spring.GetTeamUnitStats   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamResourceStats  = function  (  metal", teamID,)
+function Spring.GetTeamResourceStats    (  metal", teamID,)
 assert(type(metal") == "string","Argument metal" is of invalid type - expected string");
 assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
 return
  end
 
-Spring.GetTeamStatsHistory = function  (  teamID, endIndex, startIndex)
+function Spring.GetTeamStatsHistory   (  teamID, endIndex, startIndex)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 assert(type(endIndex) == "number","Argument endIndex is of invalid type - expected number");
 assert(type(startIndex) == "number","Argument startIndex is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamLuaAI = function  (  teamID)
+function Spring.GetTeamLuaAI   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.AreTeamsAllied = function  (  teamID1)
+function Spring.AreTeamsAllied   (  teamID1)
 assert(type(teamID1) == "number","Argument teamID1 is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.ArePlayersAllied = function  (  playerID1)
+function Spring.ArePlayersAllied   (  playerID1)
 assert(type(playerID1) == "number","Argument playerID1 is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetAllUnits = function  ( )
+function Spring.GetAllUnits   ( )
 return  numberMock
  end
 
-Spring.GetTeamUnits = function  (  teamID)
+function Spring.GetTeamUnits   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamUnitsSorted = function  (  teamID)
+function Spring.GetTeamUnitsSorted   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return
  end
 
-Spring.GetTeamUnitsCounts = function  (  teamID)
+function Spring.GetTeamUnitsCounts   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamUnitsByDefs = function  (  teamID,, unitDefID)
+function Spring.GetTeamUnitsByDefs   (  teamID,, unitDefID)
 assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
 assert(type(unitDefID) == "number","Argument unitDefID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamUnitDefCount = function  (  teamID,, unitDefID)
+function Spring.GetTeamUnitDefCount   (  teamID,, unitDefID)
 assert(type(teamID,) == "number","Argument teamID, is of invalid type - expected number");
 assert(type(unitDefID) == "number","Argument unitDefID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamUnitCount = function  (  teamID)
+function Spring.GetTeamUnitCount   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitsInRectangle = function  (  xmin,, teamID], zmin,, zmax, xmax,)
+function Spring.GetUnitsInRectangle   (  xmin,, teamID], zmin,, zmax, xmax,)
 assert(type(xmin,) == "number","Argument xmin, is of invalid type - expected number");
 assert(type(teamID]) == "number","Argument teamID] is of invalid type - expected number");
 assert(type(zmin,) == "number","Argument zmin, is of invalid type - expected number");
@@ -252,11 +252,11 @@ assert(type(xmax,) == "number","Argument xmax, is of invalid type - expected num
 return  numberMock
  end
 
-Spring.GetUnitsInBox = function  ( )
+function Spring.GetUnitsInBox   ( )
 return  numberMock
  end
 
-Spring.GetUnitsInSphere = function  (  radius, y,, z,, teamID], x,)
+function Spring.GetUnitsInSphere   (  radius, y,, z,, teamID], x,)
 assert(type(radius) == "number","Argument radius is of invalid type - expected number");
 assert(type(y,) == "number","Argument y, is of invalid type - expected number");
 assert(type(z,) == "number","Argument z, is of invalid type - expected number");
@@ -265,7 +265,7 @@ assert(type(x,) == "number","Argument x, is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitsInCylinder = function  (  radius, z,, teamID], x,)
+function Spring.GetUnitsInCylinder   (  radius, z,, teamID], x,)
 assert(type(radius) == "number","Argument radius is of invalid type - expected number");
 assert(type(z,) == "number","Argument z, is of invalid type - expected number");
 assert(type(teamID]) == "number","Argument teamID] is of invalid type - expected number");
@@ -273,28 +273,28 @@ assert(type(x,) == "number","Argument x, is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitsInPlanes = function  ( )
+function Spring.GetUnitsInPlanes   ( )
 return  numberMock
  end
 
-Spring.GetUnitNearestAlly = function  (  range, unitID)
+function Spring.GetUnitNearestAlly   (  range, unitID)
 assert(type(range) == "number","Argument range is of invalid type - expected number");
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitNearestEnemy = function  (  range, unitID)
+function Spring.GetUnitNearestEnemy   (  range, unitID)
 assert(type(range) == "number","Argument range is of invalid type - expected number");
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.ValidUnitID = function  (  unitID)
+function Spring.ValidUnitID   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetUnitIsDead = function  (  unitID)
+function Spring.GetUnitIsDead   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end

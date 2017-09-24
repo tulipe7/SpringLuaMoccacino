@@ -20,110 +20,110 @@ booleanMock =true
 functionMock =function (bar) return bar; end
 --==================================================================================================
 
-Spring.IsReplay = function  ( )
+function Spring.IsReplay   ( )
 return  booleanMock
  end
 
-Spring.GetReplayLength  = function  ( )
+function Spring.GetReplayLength    ( )
 return  numberMock
  end
 
-Spring.GetSpectatingState = function  ( )
+function Spring.GetSpectatingState   ( )
 return  booleanMock
  end
 
-Spring.GetModUICtrl = function  ( )
+function Spring.GetModUICtrl   ( )
 return  booleanMock
  end
 
-Spring.GetMyAllyTeamID = function  ( )
+function Spring.GetMyAllyTeamID   ( )
 return  numberMock
  end
 
-Spring.GetMyTeamID = function  ( )
+function Spring.GetMyTeamID   ( )
 return  numberMock
  end
 
-Spring.GetMyPlayerID = function  ( )
+function Spring.GetMyPlayerID   ( )
 return  numberMock
  end
 
-Spring.GetLocalPlayerID = function  ( )
+function Spring.GetLocalPlayerID   ( )
 return  numberMock
  end
 
-Spring.GetLocalTeamID = function  ( )
+function Spring.GetLocalTeamID   ( )
 return  numberMock
  end
 
-Spring.GetLocalAllyTeamID = function  ( )
+function Spring.GetLocalAllyTeamID   ( )
 return  numberMock
  end
 
-Spring.GetPlayerRoster = function  (  sortType)
+function Spring.GetPlayerRoster   (  sortType)
 assert(type(sortType) == "number","Argument sortType is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamColor = function  (  teamID)
+function Spring.GetTeamColor   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetTeamOrigColor = function  (  teamID)
+function Spring.GetTeamOrigColor   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetPlayerTraffic = function  (  playerID, packetID)
+function Spring.GetPlayerTraffic   (  playerID, packetID)
 assert(type(playerID) == "number","Argument playerID is of invalid type - expected number");
 assert(type(packetID) == "number","Argument packetID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetSoundStreamTime = function  ( )
+function Spring.GetSoundStreamTime   ( )
 return  numberMock
  end
 
-Spring.GetCameraNames = function  ( )
+function Spring.GetCameraNames   ( )
 return  tableMock
  end
 
-Spring.GetCameraState = function  ( )
+function Spring.GetCameraState   ( )
 return  tableMock
  end
 
-Spring.GetCameraPosition = function  ( )
+function Spring.GetCameraPosition   ( )
 return  numberMock
  end
 
-Spring.GetCameraDirection = function  ( )
+function Spring.GetCameraDirection   ( )
 return  numberMock
  end
 
-Spring.GetCameraFOV = function  ( )
+function Spring.GetCameraFOV   ( )
 return  numberMock
  end
 
-Spring.GetCameraVectors = function  ( )
+function Spring.GetCameraVectors   ( )
 return  tableMock
  end
 
-Spring.GetVisibleUnits = function  (  teamID)
+function Spring.GetVisibleUnits   (  teamID)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.GetVisibleFeatures = function  (  allyTeamID)
+function Spring.GetVisibleFeatures   (  allyTeamID)
 assert(type(allyTeamID) == "number","Argument allyTeamID is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.IsAABBInView = function  ( )
+function Spring.IsAABBInView   ( )
 return  booleanMock
  end
 
-Spring.IsSphereInView = function  (  x, y, z, radius)
+function Spring.IsSphereInView   (  x, y, z, radius)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
@@ -131,339 +131,339 @@ assert(type(radius) == "number","Argument radius is of invalid type - expected n
 return  booleanMock
  end
 
-Spring.IsUnitIcon = function  (  unitID)
+function Spring.IsUnitIcon   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.IsUnitInView = function  (  unitID)
+function Spring.IsUnitInView   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.IsUnitVisible = function  (  unitID, radius, checkIcons)
+function Spring.IsUnitVisible   (  unitID, radius, checkIcons)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(radius) == "number","Argument radius is of invalid type - expected number");
 assert(type(checkIcons) == "boolean","Argument checkIcons is of invalid type - expected boolean");
 return  booleanMock
  end
 
-Spring.WorldToScreenCoords = function  (  x, y, z)
+function Spring.WorldToScreenCoords   (  x, y, z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.TraceScreenRay = function  ( )
+function Spring.TraceScreenRay   ( )
 return
  end
 
-Spring.GetPixelDir  = function  (  x, y)
+function Spring.GetPixelDir    (  x, y)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetViewGeometry = function  ( )
+function Spring.GetViewGeometry   ( )
 return  numberMock
  end
 
-Spring.GetWindowGeometry = function  ( )
+function Spring.GetWindowGeometry   ( )
 return  numberMock
  end
 
-Spring.GetScreenGeometry  = function  ()
+function Spring.GetScreenGeometry    ()
 return  numberMock
  end
 
-Spring.IsUnitAllied = function  (  unitID)
+function Spring.IsUnitAllied   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetUnitViewPosition = function  (  unitID, midPos)
+function Spring.GetUnitViewPosition   (  unitID, midPos)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(midPos) == "boolean","Argument midPos is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.GetUnitTransformMatrix = function  (  unitID, invert)
+function Spring.GetUnitTransformMatrix   (  unitID, invert)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(invert) == "boolean","Argument invert is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.GetSelectedUnits = function  ( )
+function Spring.GetSelectedUnits   ( )
 return  tableMock
  end
 
-Spring.GetSelectedUnitsSorted = function  ( )
+function Spring.GetSelectedUnitsSorted   ( )
 return  tableMock
  end
 
-Spring.GetSelectedUnitsCounts = function  ( )
+function Spring.GetSelectedUnitsCounts   ( )
 return  tableMock
  end
 
-Spring.GetSelectedUnitsCount = function  ( )
+function Spring.GetSelectedUnitsCount   ( )
 return  numberMock
  end
 
-Spring.IsUnitSelected = function  (  unitID)
+function Spring.IsUnitSelected   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetUnitGroup = function  (  unitID)
+function Spring.GetUnitGroup   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetGroupList = function  ( )
+function Spring.GetGroupList   ( )
 return  tableMock
  end
 
-Spring.GetSelectedGroup = function  ( )
+function Spring.GetSelectedGroup   ( )
 return  numberMock
  end
 
-Spring.GetGroupAIName = function  (  groupID)
+function Spring.GetGroupAIName   (  groupID)
 assert(type(groupID) == "number","Argument groupID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetGroupAIList = function  ( )
+function Spring.GetGroupAIList   ( )
 return  tableMock
  end
 
-Spring.GetGroupUnits = function  (  groupID)
+function Spring.GetGroupUnits   (  groupID)
 assert(type(groupID) == "number","Argument groupID is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.GetGroupUnitsSorted = function  (  groupID)
+function Spring.GetGroupUnitsSorted   (  groupID)
 assert(type(groupID) == "number","Argument groupID is of invalid type - expected number");
 return
  end
 
-Spring.GetGroupUnitsCounts = function  (  groupID)
+function Spring.GetGroupUnitsCounts   (  groupID)
 assert(type(groupID) == "number","Argument groupID is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.GetGroupUnitsCount = function  (  groupID)
+function Spring.GetGroupUnitsCount   (  groupID)
 assert(type(groupID) == "number","Argument groupID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetVisibleProjectiles  = function  ( )
+function Spring.GetVisibleProjectiles    ( )
 return  tableMock
  end
 
-Spring.IsGUIHidden = function  ( )
+function Spring.IsGUIHidden   ( )
 return  booleanMock
  end
 
-Spring.HaveShadows = function  ( )
+function Spring.HaveShadows   ( )
 return  booleanMock
  end
 
-Spring.HaveAdvShading = function  ( )
+function Spring.HaveAdvShading   ( )
 return  booleanMock
  end
 
-Spring.GetWaterMode = function  ( )
+function Spring.GetWaterMode   ( )
 return  numberMock
  end
 
-Spring.GetMapDrawMode = function  ( )
+function Spring.GetMapDrawMode   ( )
 return
  end
 
-Spring.GetDrawSelectionInfo  = function  ( )
+function Spring.GetDrawSelectionInfo    ( )
 return  booleanMock
  end
 
-Spring.GetUnitLuaDraw = function  (  unitID)
+function Spring.GetUnitLuaDraw   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetUnitNoDraw = function  (  unitID)
+function Spring.GetUnitNoDraw   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetUnitNoMinimap = function  (  unitID)
+function Spring.GetUnitNoMinimap   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetUnitNoSelect = function  (  unitID)
+function Spring.GetUnitNoSelect   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetMiniMapGeometry = function  ( )
+function Spring.GetMiniMapGeometry   ( )
 return  numberMock
  end
 
-Spring.GetMiniMapDualScreen = function  ( )
+function Spring.GetMiniMapDualScreen   ( )
 return  stringMock
  end
 
-Spring.IsAboveMiniMap = function  (  x, y)
+function Spring.IsAboveMiniMap   (  x, y)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetActiveCommand = function  ( )
+function Spring.GetActiveCommand   ( )
 return  numberMock
  end
 
-Spring.GetDefaultCommand = function  ( )
+function Spring.GetDefaultCommand   ( )
 return  numberMock
  end
 
-Spring.GetActiveCmdDescs = function  ( )
+function Spring.GetActiveCmdDescs   ( )
 return  tableMock
  end
 
-Spring.GetActiveCmdDesc = function  (  index)
+function Spring.GetActiveCmdDesc   (  index)
 assert(type(index) == "number","Argument index is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.GetCmdDescIndex = function  (  cmdID)
+function Spring.GetCmdDescIndex   (  cmdID)
 assert(type(cmdID) == "number","Argument cmdID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetActivePage = function  ( )
+function Spring.GetActivePage   ( )
 return  numberMock
  end
 
-Spring.GetBuildFacing = function  ( )
+function Spring.GetBuildFacing   ( )
 return  numberMock
  end
 
-Spring.GetBuildSpacing = function  ( )
+function Spring.GetBuildSpacing   ( )
 return  numberMock
  end
 
-Spring.GetGatherMode = function  ( )
+function Spring.GetGatherMode   ( )
 return  numberMock
  end
 
-Spring.GetInvertQueueKey = function  ( )
+function Spring.GetInvertQueueKey   ( )
 return  booleanMock
  end
 
-Spring.GetMouseState = function  ( )
+function Spring.GetMouseState   ( )
 return  numberMock
  end
 
-Spring.GetMouseCursor = function  ( )
+function Spring.GetMouseCursor   ( )
 return  stringMock
  end
 
-Spring.GetMouseStartPosition = function  (  mouseButton)
+function Spring.GetMouseStartPosition   (  mouseButton)
 assert(type(mouseButton) == "number","Argument mouseButton is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetKeyState = function  (  key)
+function Spring.GetKeyState   (  key)
 assert(type(key) == "number","Argument key is of invalid type - expected number");
 return  booleanMock
  end
 
-Spring.GetModKeyState = function  ( )
+function Spring.GetModKeyState   ( )
 return  booleanMock
  end
 
-Spring.GetPressedKeys = function  ( )
+function Spring.GetPressedKeys   ( )
 return  tableMock
  end
 
-Spring.GetKeyCode = function  (  keysym)
+function Spring.GetKeyCode   (  keysym)
 assert(type(keysym) == "string","Argument keysym is of invalid type - expected string");
 return  stringMock
  end
 
-Spring.GetKeySymbol = function  (  key)
+function Spring.GetKeySymbol   (  key)
 assert(type(key) == "number","Argument key is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetKeyBindings = function  (  keyset)
+function Spring.GetKeyBindings   (  keyset)
 assert(type(keyset) == "string","Argument keyset is of invalid type - expected string");
 return  tableMock
  end
 
-Spring.GetActionHotKeys = function  (  action)
+function Spring.GetActionHotKeys   (  action)
 assert(type(action) == "string","Argument action is of invalid type - expected string");
 return  tableMock
  end
 
-Spring.GetLastMessagePositions = function  ( )
+function Spring.GetLastMessagePositions   ( )
 return  tableMock
  end
 
-Spring.GetConsoleBuffer = function  (  maxLines)
+function Spring.GetConsoleBuffer   (  maxLines)
 assert(type(maxLines) == "number","Argument maxLines is of invalid type - expected number");
 return  tableMock
  end
 
-Spring.GetCurrentTooltip = function  ( )
+function Spring.GetCurrentTooltip   ( )
 return  stringMock
  end
 
-Spring.GetLosViewColors = function  ( )
+function Spring.GetLosViewColors   ( )
 return  tableMock
  end
 
-Spring.GetConfigParams  = function  ( )
+function Spring.GetConfigParams    ( )
 return  tableMock
  end
 
-Spring.GetFPS = function  ( )
+function Spring.GetFPS   ( )
 return  numberMock
  end
 
-Spring.GetDrawFrame = function  ( )
+function Spring.GetDrawFrame   ( )
 return  numberMock
  end
 
-Spring.GetGameSpeed  = function  ( )
+function Spring.GetGameSpeed    ( )
 return  numberMock
  end
 
-Spring.GetFrameTimeOffset = function  ( )
+function Spring.GetFrameTimeOffset   ( )
 return  numberMock
  end
 
-Spring.GetLastUpdateSeconds = function  ( )
+function Spring.GetLastUpdateSeconds   ( )
 return  numberMock
  end
 
-Spring.GetHasLag = function  ( )
+function Spring.GetHasLag   ( )
 return  booleanMock
  end
 
-Spring.GetTimer = function  ( )
+function Spring.GetTimer   ( )
 return  numberMock
  end
 
-Spring.DiffTimers = function  (  timercur, timerago, inMilliseconds)
+function Spring.DiffTimers   (  timercur, timerago, inMilliseconds)
 assert(type(timercur) == "number","Argument timercur is of invalid type - expected number");
 assert(type(timerago) == "number","Argument timerago is of invalid type - expected number");
 assert(type(inMilliseconds) == "boolean","Argument inMilliseconds is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.GetMapSquareTexture = function  (  texSqrX, texSqrY, texMipLvl, luaTexName)
+function Spring.GetMapSquareTexture   (  texSqrX, texSqrY, texMipLvl, luaTexName)
 assert(type(texSqrX) == "number","Argument texSqrX is of invalid type - expected number");
 assert(type(texSqrY) == "number","Argument texSqrY is of invalid type - expected number");
 assert(type(texMipLvl) == "number","Argument texMipLvl is of invalid type - expected number");
@@ -471,11 +471,11 @@ assert(type(luaTexName) == "string","Argument luaTexName is of invalid type - ex
 return  numberMock
  end
 
-Spring.GetLogSections = function  ( )
+function Spring.GetLogSections   ( )
 return  tableMock
  end
 
-Spring.GetClipboard  = function  ( )
+function Spring.GetClipboard    ( )
 return  stringMock
  end
 

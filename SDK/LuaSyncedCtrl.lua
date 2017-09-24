@@ -20,150 +20,150 @@ booleanMock =true
 functionMock =function (bar) return bar; end
 --==================================================================================================
 
-Spring.SetUnitRulesParam = function  (  unitID, paramName)
+function Spring.SetUnitRulesParam (  unitID, paramName)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(paramName) == "string","Argument paramName is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.SetTeamRulesParam = function  (  teamID, paramName)
+function Spring.SetTeamRulesParam   (  teamID, paramName)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 assert(type(paramName) == "string","Argument paramName is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.SetGameRulesParam = function  (  paramName)
+function Spring.SetGameRulesParam   (  paramName)
 assert(type(paramName) == "string","Argument paramName is of invalid type - expected string");
 return  stringMock
  end
 
-Spring.AddTeamResource = function  (  teamID, metal)
+function Spring.AddTeamResource   (  teamID, metal)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 assert(type(metal) == "string","Argument metal is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.UseTeamResource = function  ( )
+function Spring.UseTeamResource   ( )
 return  booleanMock
  end
 
-Spring.SetTeamResource = function  (  teamID, res, amount)
+function Spring.SetTeamResource   (  teamID, res, amount)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 assert(type(res) == "string","Argument res is of invalid type - expected string");
 assert(type(amount) == "number","Argument amount is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetTeamShareLevel = function  (  teamID, metal)
+function Spring.SetTeamShareLevel   (  teamID, metal)
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 assert(type(metal) == "string","Argument metal is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.ShareTeamResource  = function  (  teamID_)
+function Spring.ShareTeamResource    (  teamID_)
 assert(type(teamID_) == "number","Argument teamID_ is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetAlly  = function  (  firstAllyTeamID, secondAllyTeamID, ally)
+function Spring.SetAlly    (  firstAllyTeamID, secondAllyTeamID, ally)
 assert(type(firstAllyTeamID) == "number","Argument firstAllyTeamID is of invalid type - expected number");
 assert(type(secondAllyTeamID) == "number","Argument secondAllyTeamID is of invalid type - expected number");
 assert(type(ally) == "boolean","Argument ally is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.AssignPlayerToTeam  = function  (  playerID, teamID)
+function Spring.AssignPlayerToTeam    (  playerID, teamID)
 assert(type(playerID) == "number","Argument playerID is of invalid type - expected number");
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return boolMock
 end
 
-Spring.CreateUnit = function  (  unitDefID, x, y , z, teamID)
+function Spring.CreateUnit   (  unitDefID, x, y , z, teamID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.DestroyUnit = function  ( )
+function Spring.DestroyUnit   ( )
 return  numberMock
  end
 
-Spring.TransferUnit = function  ( )
+function Spring.TransferUnit   ( )
 return  booleanMock
  end
 
-Spring.SetUnitCosts = function  ( )
+function Spring.SetUnitCosts   ( )
 return
  end
 
-Spring.SetUnitTooltip = function  (  unitID, tooltip)
+function Spring.SetUnitTooltip   (  unitID, tooltip)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(tooltip) == "string","Argument tooltip is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.SetUnitHealth = function  ( )
+function Spring.SetUnitHealth   ( )
 return
  end
 
-Spring.SetUnitMaxHealth = function  (  unitID, maxHealth)
+function Spring.SetUnitMaxHealth   (  unitID, maxHealth)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(maxHealth) == "number","Argument maxHealth is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.AddUnitDamage = function  ( )
+function Spring.AddUnitDamage   ( )
 return  numberMock
  end
 
-Spring.SetUnitStockpile = function  (  unitID, stockpile, buildPercent)
+function Spring.SetUnitStockpile   (  unitID, stockpile, buildPercent)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(stockpile) == "number","Argument stockpile is of invalid type - expected number");
 assert(type(buildPercent) == "number","Argument buildPercent is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitExperience = function  (  unitID, experience)
+function Spring.SetUnitExperience   (  unitID, experience)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(experience) == "number","Argument experience is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitFuel = function  (  unitID, fuel)
+function Spring.SetUnitFuel   (  unitID, fuel)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(fuel) == "number","Argument fuel is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitCrashing  = function  (  unitID, crashing)
+function Spring.SetUnitCrashing    (  unitID, crashing)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(crashing) == "boolean","Argument crashing is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetUnitLineage  = function  (  unitID, teamID, isRoot)
+function Spring.SetUnitLineage    (  unitID, teamID, isRoot)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 assert(type(isRoot) == "boolean","Argument isRoot is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetUnitNeutral = function  (  unitID, neutral)
+function Spring.SetUnitNeutral   (  unitID, neutral)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(neutral) == "boolean","Argument neutral is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetUnitTarget  = function  ( )
+function Spring.SetUnitTarget    ( )
 return  booleanMock
  end
 
-Spring.SetUnitMaxRange = function  (  unitID, maxRange)
+function Spring.SetUnitMaxRange   (  unitID, maxRange)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(maxRange) == "number","Argument maxRange is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitBlocking  = function  (  unitID, blocking, collide, crushable)
+function Spring.SetUnitBlocking    (  unitID, blocking, collide, crushable)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(blocking) == "boolean","Argument blocking is of invalid type - expected boolean");
 assert(type(collide) == "boolean","Argument collide is of invalid type - expected boolean");
@@ -171,102 +171,102 @@ assert(type(crushable) == "boolean","Argument crushable is of invalid type - exp
 return  numberMock
  end
 
-Spring.SetUnitBlocking  = function  (  unitID, depth, range)
+function Spring.SetUnitBlocking    (  unitID, depth, range)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(depth) == "number","Argument depth is of invalid type - expected number");
 assert(type(range) == "number","Argument range is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitBuildSpeed = function  ( )
+function Spring.SetUnitBuildSpeed   ( )
 return  numberMock
  end
 
-Spring.SetUnitNanoPieces  = function  (  builderID, pieces)
+function Spring.SetUnitNanoPieces    (  builderID, pieces)
 assert(type(builderID) == "number","Argument builderID is of invalid type - expected number");
 assert(type(pieces) == "table","Argument pieces is of invalid type - expected table");
 return  numberMock
  end
 
-Spring.UnitAttach  = function  (  transporterID, passengerID, pieceNum)
+function Spring.UnitAttach    (  transporterID, passengerID, pieceNum)
 assert(type(transporterID) == "number","Argument transporterID is of invalid type - expected number");
 assert(type(passengerID) == "number","Argument passengerID is of invalid type - expected number");
 assert(type(pieceNum) == "number","Argument pieceNum is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.UnitDetach  = function  (  passengerID)
+function Spring.UnitDetach    (  passengerID)
 assert(type(passengerID) == "number","Argument passengerID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.UnitDetachFromAir  = function  (  passengerID)
+function Spring.UnitDetachFromAir    (  passengerID)
 assert(type(passengerID) == "number","Argument passengerID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitLoadingTransport  = function  (  passengerID, transportID)
+function Spring.SetUnitLoadingTransport    (  passengerID, transportID)
 assert(type(passengerID) == "number","Argument passengerID is of invalid type - expected number");
 assert(type(transportID) == "number","Argument transportID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitPieceParent  = function  (  unitID, AlteredPiece, ParentPiece)
+function Spring.SetUnitPieceParent    (  unitID, AlteredPiece, ParentPiece)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(AlteredPiece) == "number","Argument AlteredPiece is of invalid type - expected number");
 assert(type(ParentPiece) == "number","Argument ParentPiece is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitArmored  = function  (  unitID, armored, armorMultiple)
+function Spring.SetUnitArmored    (  unitID, armored, armorMultiple)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(armored) == "boolean","Argument armored is of invalid type - expected boolean");
 assert(type(armorMultiple) == "number","Argument armorMultiple is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitShieldState = function  (  unitID, weaponID)
+function Spring.SetUnitShieldState   (  unitID, weaponID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(weaponID) == "number","Argument weaponID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitFlanking = function  (  unitID, mode, mode)
+function Spring.SetUnitFlanking   (  unitID, mode, mode)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(mode) == "string","Argument mode is of invalid type - expected string");
 assert(type(mode) == "number","Argument mode is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitWeaponState = function  (  unitID, weaponNum, states)
+function Spring.SetUnitWeaponState   (  unitID, weaponNum, states)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(weaponNum) == "number","Argument weaponNum is of invalid type - expected number");
 assert(type(states) == "table","Argument states is of invalid type - expected table");
 return  numberMock
  end
 
-Spring.SetUnitWeaponDamages  = function  (  unitID, weaponNum)
+function Spring.SetUnitWeaponDamages    (  unitID, weaponNum)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(weaponNum) == "number","Argument weaponNum is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitCollisionVolumeData = function  ( )
+function Spring.SetUnitCollisionVolumeData   ( )
 return
  end
 
-Spring.SetUnitPieceCollisionVolumeData = function  ( )
+function Spring.SetUnitPieceCollisionVolumeData   ( )
 return
  end
 
-Spring.SetUnitTravel = function  (  unitID, travel, travelPeriod)
+function Spring.SetUnitTravel   (  unitID, travel, travelPeriod)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(travel) == "number","Argument travel is of invalid type - expected number");
 assert(type(travelPeriod) == "number","Argument travelPeriod is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitMoveGoal  = function  (  unitID, goalx, goaly, goalz, goalRadius, moveSpeed)
+function Spring.SetUnitMoveGoal    (  unitID, goalx, goaly, goalz, goalRadius, moveSpeed)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(goalx) == "number","Argument goalx is of invalid type - expected number");
 assert(type(goaly) == "number","Argument goaly is of invalid type - expected number");
@@ -277,7 +277,7 @@ return  booleanMock
  end
 
 
-Spring.SetUnitPosition = function  (  unitID, x, z, alwaysAboveSea)
+function Spring.SetUnitPosition   (  unitID, x, z, alwaysAboveSea)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
@@ -285,7 +285,7 @@ assert(type(alwaysAboveSea) == "boolean","Argument alwaysAboveSea is of invalid 
 return  numberMock
  end
 
-Spring.SetUnitDirection  = function  (  unitID, x, y, z)
+function Spring.SetUnitDirection    (  unitID, x, y, z)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -293,7 +293,7 @@ assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitVelocity = function  (  unitID, velx, vely, velz)
+function Spring.SetUnitVelocity   (  unitID, velx, vely, velz)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(velx) == "number","Argument velx is of invalid type - expected number");
 assert(type(vely) == "number","Argument vely is of invalid type - expected number");
@@ -301,7 +301,7 @@ assert(type(velz) == "number","Argument velz is of invalid type - expected numbe
 return  numberMock
  end
 
-Spring.SetUnitRotation = function  (  unitID, rotx, roty, rotz)
+function Spring.SetUnitRotation   (  unitID, rotx, roty, rotz)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(rotx) == "number","Argument rotx is of invalid type - expected number");
 assert(type(roty) == "number","Argument roty is of invalid type - expected number");
@@ -309,7 +309,7 @@ assert(type(rotz) == "number","Argument rotz is of invalid type - expected numbe
 return  numberMock
  end
 
-Spring.AddUnitImpulse = function  (  unitID, x, y, z)
+function Spring.AddUnitImpulse   (  unitID, x, y, z)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -317,145 +317,145 @@ assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.AddUnitSeismicPing = function  (  unitID, pingSize)
+function Spring.AddUnitSeismicPing   (  unitID, pingSize)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(pingSize) == "number","Argument pingSize is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.RemoveBuildingDecal = function  (  unitID)
+function Spring.RemoveBuildingDecal   (  unitID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitMidAndAimPos  = function  ( )
+function Spring.SetUnitMidAndAimPos    ( )
 return  booleanMock
  end
 
-Spring.SetUnitRadiusAndHeight  = function  (  unitID, radius, height)
+function Spring.SetUnitRadiusAndHeight    (  unitID, radius, height)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(radius) == "number","Argument radius is of invalid type - expected number");
 assert(type(height) == "number","Argument height is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.UnitWeaponFire = function  (  unitID, weaponID)
+function Spring.UnitWeaponFire   (  unitID, weaponID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(weaponID) == "number","Argument weaponID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.UnitWeaponHoldFire = function  (  unitID, weaponID)
+function Spring.UnitWeaponHoldFire   (  unitID, weaponID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(weaponID) == "number","Argument weaponID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitCloak = function  ( )
+function Spring.SetUnitCloak   ( )
 return  numberMock
  end
 
-Spring.SetUnitSonarStealth = function  (  unitID, sonarStealth)
+function Spring.SetUnitSonarStealth   (  unitID, sonarStealth)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(sonarStealth) == "boolean","Argument sonarStealth is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetUnitStealth = function  (  unitID, stealth)
+function Spring.SetUnitStealth   (  unitID, stealth)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(stealth) == "boolean","Argument stealth is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetUnitAlwaysVisible = function  (  unitID, alwaysVisible)
+function Spring.SetUnitAlwaysVisible   (  unitID, alwaysVisible)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(alwaysVisible) == "boolean","Argument alwaysVisible is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetUnitLosMask = function  (  unitID, allyTeam, los)
+function Spring.SetUnitLosMask   (  unitID, allyTeam, los)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(allyTeam) == "number","Argument allyTeam is of invalid type - expected number");
 assert(type(los) == "number","Argument los is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitLosState = function  (  unitID, allyTeam, los)
+function Spring.SetUnitLosState   (  unitID, allyTeam, los)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(allyTeam) == "number","Argument allyTeam is of invalid type - expected number");
 assert(type(los) == "number","Argument los is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetUnitSensorRadius = function  (  unitID, type, radius)
+function Spring.SetUnitSensorRadius   (  unitID, type, radius)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(type) == "string","Argument type is of invalid type - expected string");
 assert(type(radius) == "number","Argument radius is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetRadarErrorParams  = function  ( )
+function Spring.SetRadarErrorParams    ( )
 return  numberMock
  end
 
-Spring.SetUnitPosErrorParams  = function  ( )
+function Spring.SetUnitPosErrorParams    ( )
 return  numberMock
  end
 
-Spring.SetUnitResourcing = function  ( )
+function Spring.SetUnitResourcing   ( )
 return
  end
 
-Spring.AddUnitResource = function  (  unitID, m)
+function Spring.AddUnitResource   (  unitID, m)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(m) == "string","Argument m is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.UseUnitResource = function  (  unitID, m)
+function Spring.UseUnitResource   (  unitID, m)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(m) == "string","Argument m is of invalid type - expected string");
 return  booleanMock
  end
 
-Spring.SetUnitHarvestStorage  = function  (  unitid, metal)
+function Spring.SetUnitHarvestStorage    (  unitid, metal)
 assert(type(unitid) == "number","Argument unitid is of invalid type - expected number");
 assert(type(metal) == "number","Argument metal is of invalid type - expected number");
 
 return  numberMock
  end
 
-Spring.DestroyFeature = function  (  featureID)
+function Spring.DestroyFeature   (  featureID)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.TransferFeature = function  (  featureID, teamID)
+function Spring.TransferFeature   (  featureID, teamID)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(teamID) == "number","Argument teamID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetFeatureHealth = function  (  featureID, health)
+function Spring.SetFeatureHealth   (  featureID, health)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(health) == "number","Argument health is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetFeatureReclaim = function  (  featureID, reclaimLeft)
+function Spring.SetFeatureReclaim   (  featureID, reclaimLeft)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(reclaimLeft) == "number","Argument reclaimLeft is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetFeatureResurrect = function  (  featureID, UnitDefName, facing)
+function Spring.SetFeatureResurrect   (  featureID, UnitDefName, facing)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(UnitDefName) == "string","Argument UnitDefName? is of invalid type - expected string");
 assert(type(facing) == "number","Argument facing is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetFeaturePosition = function  (  featureID, x, y, z, snapToGround)
+function Spring.SetFeaturePosition   (  featureID, x, y, z, snapToGround)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -464,7 +464,7 @@ assert(type(snapToGround) == "boolean","Argument snapToGround is of invalid type
 return  numberMock
  end
 
-Spring.SetFeatureDirection = function  (  featureID, x, y, z)
+function Spring.SetFeatureDirection   (  featureID, x, y, z)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -472,124 +472,124 @@ assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetFeatureVelocity  = function  ( featureID, noSelect)
+function Spring.SetFeatureVelocity    ( featureID, noSelect)
 
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(noSelect) == "boolean","Argument noSelect is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetFeatureAlwaysVisible = function  (  featureID, enable)
+function Spring.SetFeatureAlwaysVisible   (  featureID, enable)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(enable) == "boolean","Argument enable is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetFeatureCollisionVolumeData = function  ( )
+function Spring.SetFeatureCollisionVolumeData   ( )
 return
  end
 
-Spring.SetUnitCollisionVolumeData  = function  ( )
+function Spring.SetUnitCollisionVolumeData    ( )
 return  booleanMock
  end
 
-Spring.SetUnitMidAndAimPos  = function  (  unitID, radius, height)
+function Spring.SetUnitMidAndAimPos    (  unitID, radius, height)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(radius) == "number","Argument radius is of invalid type - expected number");
 assert(type(height) == "number","Argument height is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetFeatureBlocking = function  (  featureID, blocking, collidable)
+function Spring.SetFeatureBlocking   (  featureID, blocking, collidable)
 assert(type(featureID) == "number","Argument featureID is of invalid type - expected number");
 assert(type(blocking) == "boolean","Argument blocking is of invalid type - expected boolean");
 assert(type(collidable) == "boolean","Argument collidable is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetFeatureBlocking  = function  (  unitID, funcID)
+function Spring.SetFeatureBlocking    (  unitID, funcID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(funcID) == "number","Argument funcID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.CallCOBScriptCB = function  (  unitID, funcID)
+function Spring.CallCOBScriptCB   (  unitID, funcID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(funcID) == "number","Argument funcID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GetCOBScriptID = function  (  unitID, funcName)
+function Spring.GetCOBScriptID   (  unitID, funcName)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(funcName) == "string","Argument funcName is of invalid type - expected string");
 return  numberMock
  end
 
 
-Spring.SetUnitCOBValue = function  (  unitID, COBValue, param1)
+function Spring.SetUnitCOBValue   (  unitID, COBValue, param1)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(COBValue) == "number","Argument COBValue is of invalid type - expected number");
 assert(type(param1) == "number","Argument param1 is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.GiveOrderToUnit = function  ( )
+function Spring.GiveOrderToUnit   ( )
 return
  end
 
-Spring.GiveOrderToUnitMap = function  ( )
+function Spring.GiveOrderToUnitMap   ( )
 return
  end
 
-Spring.GiveOrderToUnitArray = function  ( )
+function Spring.GiveOrderToUnitArray   ( )
 return
  end
 
-Spring.GiveOrderArrayToUnitMap = function  ( )
+function Spring.GiveOrderArrayToUnitMap   ( )
 return
  end
 
-Spring.GiveOrderArrayToUnitArray = function  ( )
+function Spring.GiveOrderArrayToUnitArray   ( )
 return
  end
 
-Spring.AddGrass = function  (  x, z)
+function Spring.AddGrass   (  x, z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.RemoveGrass = function  (  x, z)
+function Spring.RemoveGrass   (  x, z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.LevelHeightMap = function  (  x,z)
+function Spring.LevelHeightMap   (  x,z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.AdjustHeightMap  = function  (  x,z)
+function Spring.AdjustHeightMap    (  x,z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.RevertHeightMap = function  (  x,z)
+function Spring.RevertHeightMap   (  x,z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetHeightMapFunc = function  ( )
+function Spring.SetHeightMapFunc   ( )
 return  numberMock
  end
 
 
 
-Spring.SetHeightMap  = function  ( x, z, height, terraform)
+function Spring.SetHeightMap    ( x, z, height, terraform)
 
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
@@ -598,32 +598,32 @@ assert(type(terraform) == "number","Argument terraform is of invalid type - expe
 return  numberMock
  end
 
-Spring.LevelSmoothMesh = function   (  x,z)
+function Spring.LevelSmoothMesh    (  x,z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
 
-Spring.AdjustSmoothMesh = function   (  x,z)
+function Spring.AdjustSmoothMesh    (  x,z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
 
-Spring.RevertSmoothMesh = function   (  x,z)
+function Spring.RevertSmoothMesh    (  x,z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
 
-Spring.SetSmoothMeshFunc = function  ( )
+function Spring.SetSmoothMeshFunc   ( )
 return  numberMock
  end
 
-Spring.AddSmoothMesh  = function  ( x, z, height)
+function Spring.AddSmoothMesh    ( x, z, height)
 
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
@@ -631,7 +631,7 @@ assert(type(height) == "number","Argument height is of invalid type - expected n
 return  numberMock
  end
 
-Spring.SetSmoothMesh  = function  (
+function Spring.SetSmoothMesh    (
  x, z, height, terraform)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
@@ -640,24 +640,24 @@ assert(type(terraform) == "number","Argument terraform is of invalid type - expe
 return  numberMock
  end
 
-Spring.SetMapSquareTerrainType = function  (  x, z)
+function Spring.SetMapSquareTerrainType   (  x, z)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 return
  end
 
-Spring.SetTerrainTypeData = function  ( )
+function Spring.SetTerrainTypeData   ( )
 return  booleanMock
  end
 
-Spring.SetMetalAmount  = function  (  x, z, metalAmount)
+function Spring.SetMetalAmount    (  x, z, metalAmount)
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(z) == "number","Argument z is of invalid type - expected number");
 assert(type(metalAmount) == "number","Argument metalAmount is of invalid type - expected number");
 end
 
 
-Spring.EditUnitCmdDesc = function (  unitID,  cmdDescID,  cmdArray )
+function Spring.EditUnitCmdDesc  (  unitID,  cmdDescID,  cmdArray )
 
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(cmdDescID) == "number","Argument cmdDescID is of invalid type - expected number");
@@ -665,60 +665,60 @@ assert(type(cmdArray) == "table","Argument cmdArray is of invalid type - expecte
 return  numberMock
  end
 
-Spring.InsertUnitCmdDesc = function  (  unitID, cmdDescID, cmdArray)
+function Spring.InsertUnitCmdDesc   (  unitID, cmdDescID, cmdArray)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(cmdDescID) == "number","Argument cmdDescID is of invalid type - expected number");
 assert(type(cmdArray) == "table","Argument cmdArray is of invalid type - expected table");
 return  numberMock
  end
 
-Spring.RemoveUnitCmdDesc = function  (  unitID, cmdDescID)
+function Spring.RemoveUnitCmdDesc   (  unitID, cmdDescID)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(cmdDescID) == "number","Argument cmdDescID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetNoPause = function  (  noPause)
+function Spring.SetNoPause   (  noPause)
 assert(type(noPause) == "boolean","Argument noPause is of invalid type - expected boolean");
 return  booleanMock
  end
 
-Spring.SetUnitToFeature = function  (  tofeature)
+function Spring.SetUnitToFeature   (  tofeature)
 assert(type(tofeature) == "boolean","Argument tofeature is of invalid type - expected boolean");
 return  booleanMock
  end
 
-Spring.SetExperienceGrade = function  ( )
+function Spring.SetExperienceGrade   ( )
 return  numberMock
  end
 
-Spring.SpawnCEG = function  ( )
+function Spring.SpawnCEG   ( )
 return  booleanMock
  end
 
-Spring.SpawnProjectile = function  (  weaponDefID, projectileParams)
+function Spring.SpawnProjectile   (  weaponDefID, projectileParams)
 assert(type(weaponDefID) == "number","Argument weaponDefID is of invalid type - expected number");
 assert(type(projectileParams) == "table","Argument projectileParams is of invalid type - expected table");
 return  numberMock
  end
 
-Spring.SetProjectileTarget = function  ( )
+function Spring.SetProjectileTarget   ( )
 return  booleanMock
  end
 
-Spring.SetProjectileIsIntercepted  = function  (  projID)
+function Spring.SetProjectileIsIntercepted    (  projID)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileMoveControl  = function  (
+function Spring.SetProjectileMoveControl    (
  projID, enable)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(enable) == "boolean","Argument enable is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetProjectilePosition = function  (  projID, x, y, z)
+function Spring.SetProjectilePosition   (  projID, x, y, z)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -726,7 +726,7 @@ assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileVelocity = function  (  projID, x, y, z)
+function Spring.SetProjectileVelocity   (  projID, x, y, z)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -734,30 +734,30 @@ assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileCollision = function  (  projID)
+function Spring.SetProjectileCollision   (  projID)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileGravity = function  (  projID, grav)
+function Spring.SetProjectileGravity   (  projID, grav)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(grav) == "number","Argument grav is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileSpinAngle  = function  (  projID, spinAngle)
+function Spring.SetProjectileSpinAngle    (  projID, spinAngle)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(spinAngle) == "number","Argument spinAngle is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileSpinSpeed  = function  (  projID, speed)
+function Spring.SetProjectileSpinSpeed    (  projID, speed)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(speed) == "number","Argument speed is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileSpinVec  = function  (  projID, x, y, z)
+function Spring.SetProjectileSpinVec    (  projID, x, y, z)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(x) == "number","Argument x is of invalid type - expected number");
 assert(type(y) == "number","Argument y is of invalid type - expected number");
@@ -765,23 +765,23 @@ assert(type(z) == "number","Argument z is of invalid type - expected number");
 return  numberMock
  end
 
-Spring.SetProjectileCEG = function  (  projID, ceg_)
+function Spring.SetProjectileCEG   (  projID, ceg_)
 assert(type(projID) == "number","Argument projID is of invalid type - expected number");
 assert(type(ceg_) == "string","Argument ceg_ is of invalid type - expected string");
 return  numberMock
  end
 
-Spring.SetPieceProjectileParams  = function  ( )
+function Spring.SetPieceProjectileParams    ( )
 return  numberMock
  end
 
-Spring.SetProjectileAlwaysVisible  = function  (  projectileID, alwaysVisible)
+function Spring.SetProjectileAlwaysVisible    (  projectileID, alwaysVisible)
 assert(type(projectileID) == "number","Argument projectileID is of invalid type - expected number");
 assert(type(alwaysVisible) == "boolean","Argument alwaysVisible is of invalid type - expected boolean");
 return  numberMock
  end
 
-Spring.SetProjectileDamages  = function  (  unitID, weaponNum, damages)
+function Spring.SetProjectileDamages    (  unitID, weaponNum, damages)
 assert(type(unitID) == "number","Argument unitID is of invalid type - expected number");
 assert(type(weaponNum) == "number","Argument weaponNum is of invalid type - expected number");
 assert(type(damages) == "table","Argument damages is of invalid type - expected table");
